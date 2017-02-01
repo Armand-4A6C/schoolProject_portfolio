@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+	
 }
 .row::after {
     content: "";
@@ -51,9 +52,9 @@ html {
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
-    border: blue 1px solid
+	border: green 1px solid
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and(max-width: 768px)  {
     /* For tablets: */
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
