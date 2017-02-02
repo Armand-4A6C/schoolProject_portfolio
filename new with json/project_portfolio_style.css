@@ -2,6 +2,7 @@
 html {
 	font-family: "Lucida Sans", sans-serif;
 }
+
 /*grid for mobile phones: */
 [class*="col-"] {
 	width: 100%;
@@ -9,32 +10,35 @@ html {
 	border: solid green 1px;
 }
 @media only screen and (max-width: 600px) {
+	.hideNav{
+		display:none;
+	}
+	.hideNavSup{
+		margin-top: 16px;
+	}
 	nav{
-		height:90px;
 		position: absolute;
+		height: 90px;
+		padding: 0px;
 	}
 	.hide-s{
 		display: none;
 	}
 	nav ul li{
 		clear: both;
-		margin-left: -40px
+		margin-left: -40px;
+		width: 50%;
 	}
 	.logo{
 		clear: both;
+		
 	}
 	/*hamburger menu*/
-	nav div ul li{
-		width: 50%;
-	}
-	nav div ul li{
-		box-shadow: 2px 2px 7px 1px darkgreen;
-	}
+
 	.dropdown-content a{
 		width: 100%;
 		position: relative;
 		font-size: 12px;
-		box-shadow: 2px 2px 7px 1px darkgreen;
 	}
 	.dropdown-content{
 		margin-left: 100%;
@@ -46,17 +50,17 @@ html {
 		left: 1px;
 	}
 	.show-s{
-		color: lime;
+		color: green;
 		font-size: 30px;
 		text-align: center;
 		width: 100%;
 		height: 100%;
 		font-weight: bold;
-		text-shadow: 3px 2px 2px green;
+		text-shadow: 3px 2px 2px limegreen;
 		cursor: pointer;
 	}
 	.show-s:hover{
-		color: chartreuse;
+		color: greenyellow;;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -84,7 +88,7 @@ html {
 		display: none;
 	}
 	nav ul li{
-		width: 24.99%
+		box-shadow: 0px 3px 8px 1px darkgreen;
 	}
 	.dropdown-content a{
 		font-size: 16px;
@@ -105,6 +109,13 @@ html {
 	.col-10 {width: 83.33%;}
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
+	
+	.show-s{
+		display: none;
+	}
+	nav ul li{
+		box-shadow: 0px 3px 8px 1px darkgreen;
+	}
 }
 
 /*grid etc*/
@@ -130,65 +141,61 @@ nav div ul li a{
 	height: 100%;
 	text-align: center;
 	padding-top: 5%;
-	background: linear-gradient(limegreen,lime,limegreen);
+	background: linear-gradient(green,lime,green);
 	color:azure;
 	font-weight: bold;
 	font-size: 16px;
-	text-shadow: 3px 2px 2px green;
 	cursor: pointer;
 }
 nav div ul li a:hover{
-	background: linear-gradient(limegreen,greenyellow,limegreen);
+	background: linear-gradient(green,greenyellow,green);
 }
 nav div ul li{
 	list-style: none;
 	float:left;
 	border:solid green 1px;
 	height: 40px;
-	width: 24.99%
-}
-nav div ul{
-	/*mischien later iets in */
+	width: 24.99%;
 }
 .logo{
-				float: left;
-				width: 40px;
-				height: 40px;
-				border: green solid 1px;
-				background-image: url("https://kvomtq-dm2306.files.1drv.com/y3mTOfdhp08kdg4FqiFW-PZ2RxZtrW-1cpHCWm_EiGBMaVpHQr7gmQImct2PuHd56JLJLxYu_H40OGzEvNZLgnQ0TPeAG_qEtfuP9LUm1auHNKimqwkmn6Qk2gnSMJ5fLwGOO1o7jkOw0fzwWYArXwgDx-h3_qmQo203ue5FIY_oOA?width=40&height=40&cropmode=none");
-			}
-			/*dropdown menu*/
-			.dropbtn {
-				color: azure;
-				cursor: pointer;
-			}
+	float: left;
+	width: 40px;
+	height: 40px;
+	border: green solid 1px;
+	background-image: url("https://kvomtq-dm2306.files.1drv.com/y3mTOfdhp08kdg4FqiFW-PZ2RxZtrW-1cpHCWm_EiGBMaVpHQr7gmQImct2PuHd56JLJLxYu_H40OGzEvNZLgnQ0TPeAG_qEtfuP9LUm1auHNKimqwkmn6Qk2gnSMJ5fLwGOO1o7jkOw0fzwWYArXwgDx-h3_qmQo203ue5FIY_oOA?width=40&height=40&cropmode=none");
+}
+/*dropdown menu*/
+.dropbtn {
+	color: azure;
+	cursor: pointer;
+}
 
-			.projecten {
-				position: relative;
-			}
-			.cvee {
-				position: relative;
-			}
+.projecten {
+	position: relative;
+}
+.cvee {
+	position: relative;
+}
 
-			.dropdown-content {
-				display: none;
-				position: absolute;
-				width: 100%;
-				z-index: 1;
-			}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 100%;
+}
 
-			.dropdown-content a {
-				color: azure;
-				text-decoration: none;
-				display: block;
-				border: solid green 1px;
-			}
-			.projecten:hover .dropdown-content {
-				display: block;
-			}
-			.cvee:hover .dropdown-content {
-				display: block;
-			}
+.dropdown-content a {
+	color: azure;
+	text-decoration: none;
+	display: block;
+	border: solid green 1px;
+}
+.projecten:hover .dropdown-content {
+	display: block;
+}
+.cvee:hover .dropdown-content {
+	display: block;
+}
+
 /*footer*/
 footer{
 	display: block;
@@ -202,6 +209,7 @@ footer ul li{
 	border:solid green 1px;
 	height: 30px;
 	width: 24.99%
+	
 }
 footer ul li a{
 	display: block;
@@ -210,13 +218,15 @@ footer ul li a{
 	height: 100%;
 	text-align: center;
 	padding-top: 3%;
-	background: linear-gradient(limegreen,lime,limegreen);
+	background: linear-gradient(green,lime,green);
 	color:azure;
 	font-weight: bold;
 	font-size: 11px;
 	text-shadow: 3px 2px 2px green;
+	box-shadow: 3px 3px 8px 1px darkgreen;
 	cursor: pointer;
+	
 }
 footer ul li a:hover{
-	background: linear-gradient(limegreen,greenyellow,limegreen);
+	background: linear-gradient(green,greenyellow,green);
 }
