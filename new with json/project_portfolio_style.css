@@ -78,6 +78,7 @@ nav div ul li a{
 	font-weight: bold;
 	font-size: 16px;
 	text-shadow: 3px 2px 2px green;
+	cursor: pointer;
 }
 nav div ul li a:hover{
 	background: linear-gradient(limegreen,greenyellow,limegreen);
@@ -97,6 +98,42 @@ nav div ul{
 	width: 40px;
 	border: green solid 1px;
 }
+/*dropdown menu*/
+.dropbtn {
+	color: azure;
+	cursor: pointer;
+}
+
+.projecten {
+	position: relative;
+}
+.cvee {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 100%;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: azure;
+	text-decoration: none;
+	display: block;
+	border: solid green 1px;
+}
+.projecten:hover .dropdown-content {
+	display: block;
+}
+.cvee:hover .dropdown-content {
+	display: block;
+}
+
+
+
+
 
 /*footer*/
 footer{
@@ -124,6 +161,7 @@ footer ul li a{
 	font-weight: bold;
 	font-size: 11px;
 	text-shadow: 3px 2px 2px green;
+	cursor: pointer;
 }
 footer ul li a:hover{
 	background: linear-gradient(limegreen,greenyellow,limegreen);
