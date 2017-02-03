@@ -163,9 +163,7 @@ nav div ul li{
 	height: 40px;
 	border: green solid 1px;
 	background-image: url("https://kvomtq-dm2306.files.1drv.com/y3mTOfdhp08kdg4FqiFW-PZ2RxZtrW-1cpHCWm_EiGBMaVpHQr7gmQImct2PuHd56JLJLxYu_H40OGzEvNZLgnQ0TPeAG_qEtfuP9LUm1auHNKimqwkmn6Qk2gnSMJ5fLwGOO1o7jkOw0fzwWYArXwgDx-h3_qmQo203ue5FIY_oOA?width=40&height=40&cropmode=none");
-	box-shadow: 0px 3px 8px 1px darkgreen;
 }
-
 /*dropdown menu*/
 .dropbtn {
 	color: azure;
@@ -210,7 +208,7 @@ footer ul li{
 	float:left;
 	border:solid green 1px;
 	height: 30px;
-	width: 24.99%;
+	width: 24.99%
 	
 }
 footer ul li a{
