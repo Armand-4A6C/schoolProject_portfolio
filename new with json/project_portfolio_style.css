@@ -63,14 +63,14 @@ html {
 		color: greenyellow;;
 	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 	.hide-m{
 		display: none;
 	}
 }
 
 /*grid for tablets: */
-@media only screen and (min-width: 600px) and (max-width: 768px)  {
+@media only screen and (min-width: 600px) and (max-width: 800px)  {
 	.col-m-1 {width: 8.33%;}
 	.col-m-2 {width: 16.66%;}
 	.col-m-3 {width: 25%;}
@@ -96,7 +96,7 @@ html {
 }
 
 /* grid for desktop: */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {/*768pix previously*/
 	.col-1 {width: 8.33%;}
 	.col-2 {width: 16.66%;}
 	.col-3 {width: 25%;}
@@ -231,4 +231,13 @@ footer ul li a{
 }
 footer ul li a:hover{
 	background: linear-gradient(green,greenyellow,green);
+}
+.kop1{
+	color: limegreen
+}
+.kop2{
+	font-weight: bold;
+}
+.tab1{
+	margin-left: 500
 }
