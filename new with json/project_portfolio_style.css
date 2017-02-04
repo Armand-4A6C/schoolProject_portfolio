@@ -238,6 +238,10 @@ footer ul li a:hover{
 .kop2{
 	font-weight: bold;
 }
+.kop3{
+	color: green;
+	text-decoration-color: green;
+}
 .tab1{
-	margin-left: 500
+	margin-left: 500px
 }
