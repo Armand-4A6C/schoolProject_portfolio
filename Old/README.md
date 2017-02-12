@@ -1,1 +1,0 @@
-# schoolProject_portfolio
