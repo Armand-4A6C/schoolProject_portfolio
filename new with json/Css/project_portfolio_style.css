@@ -24,8 +24,11 @@ nav div ul{
 }
 @media only screen and (max-width: 600px) {
 	nav ul{
-		margin-top: -15px;
-		margin-left: -15px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	nav ul li div a{
+		margin-left: 140px
 	}
 	.hideNav{
 		display:none;
