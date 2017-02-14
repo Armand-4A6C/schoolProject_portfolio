@@ -1,40 +1,40 @@
 /*basic styles*/	
 html {
 	font-family: "Lucida Sans", sans-serif;
+	background-color: green;
 }
 nav{
 	height: 50px;
+	position: fixed;
+	margin-left: -1%;
 }
 main{
+	margin-top: -60px;
 	border:solid green 1px;
+	background-color: forestgreen;
+	box-shadow: darkgreen 3px 3px 8px 1px;
+	border-radius:2%	
 }
 nav div ul{
-	margin-top: -30px;
 }
 /*grid for mobile phones: */
 [class*="col-"] {
 	width: 100%;
 	display: block;
-	.border: solid green 1px;
 }
 @media only screen and (max-width: 600px) {
+	nav ul{
+		margin-top: -15px;
+		margin-left: -15px;
+	}
 	.hideNav{
 		display:none;
-	}
-	.hideNavSup{
-		margin-top: 16px;
-	}
-	nav{
-		position: absolute;
-		height: 50px;
-		padding: 0px;
 	}
 	.hide-s{
 		display: none;
 	}
 	nav ul li{
 		clear: both;
-		margin-left: -40px;
 		width: 50%;
 	}
 	.logo{
@@ -49,7 +49,6 @@ nav div ul{
 		font-size: 12px;
 	}
 	.dropdown-content{
-		margin-left: 100%;
 		position: absolute;
 		top: 0px;
 		height: 35px;
@@ -91,7 +90,7 @@ nav div ul{
 	.col-m-10 {width: 83.33%;}
 	.col-m-11 {width: 91.66%;}
 	.col-m-12 {width: 100%;}
-	
+		
 	.show-s{
 		display: none;
 	}
@@ -102,13 +101,15 @@ nav div ul{
 		font-size: 16px;
 	}
 	.tab2{
-		border-left:solid green 1px;
-		width: 50%
+		margin: 3%;
+		width: 44%;
 	}
 	.tab1{
-		margin-right: -1px;
-		border-right: solid green 1px;
-		width: 50%
+		margin:3%;
+		width: 44%;
+	}	
+	nav{
+		top: -17px
 	}
 }
 
@@ -126,22 +127,25 @@ nav div ul{
 	.col-10 {width: 83.33%;}
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
-	
 	.show-s{
 		display: none;
+	}
+	nav{
+		top: -17px;
+		left: 8.33%;
+		margin-left:0px
 	}
 	nav ul li{
 		box-shadow: 0px 3px 8px 1px darkgreen;
 	}
 	.tab2{
-		border-left:solid green 1px;
-		width: 50%
+		margin: 3%;
+		width: 44%;
 	}
 	.tab1{
-		margin-right: -1px;
-		border-right: solid green 1px;
-		width: 50%
-	}
+		margin:3%;
+		width: 44%;
+	}	
 }
 
 /*grid etc*/
@@ -156,7 +160,7 @@ nav div ul{
 }
 [class*="col-"] {
 	float: left;
-	padding: 15px;
+	padding: 0.2px;
 }
 
 /*navigatie*/
@@ -259,34 +263,72 @@ footer ul li a:hover{
 	background: linear-gradient(green,greenyellow,green);
 }
 .kop1{
-	color: limegreen
+	color:royalblue
 }
 .kop2{
 	font-weight: bold;
 }
 .kop3{
-	color: green;
-	text-decoration-color: green;
+	color: darkblue;
+}
+P{
+	color: azure
+}
+.thirdBack{
+	background-color: lime;
+	box-shadow: darkgreen 3px 3px 8px 3px;
+	border-radius:2%;
+	border: green solid 3px;
+	padding: 10px;
+	margin:0px;
+}
+.schoolPrjt{
+	background-color: lime;
+	box-shadow: darkgreen 3px 3px 8px 3px;
+	border-radius:2%;
+	border: green solid 3px;
+	padding: 10px;
+	margin:0px;
+	height:320px
+}
+.experiment{
+	height:300px;
 }
 .tab1{
 	float:left;
+	background-color: lime;
+	box-shadow: green 3px 3px 8px 1px;
+	border-radius:2%;
+	border: green solid 1px;
+	padding: 15px
 }
 .tab2{
 	float:left;
+	background-color: lime;
+	box-shadow: green 3px 3px 8px 1px;
+	border-radius:2%;
+	border: green solid 1px;
+	padding: 15px
 }
 .video{
 	cursor: pointer;
 	border: solid green 2px;
 	background: linear-gradient(green,lime,green);
-	width:150px;
+	width:100%;
+	margin-left: 0px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	
 }
-.video h4{
-	color:azure;
+.video h5{
+	color:aliceblue;
 }
 .video:hover{
 	background: linear-gradient(green,greenyellow,green);
 }
-.video:hover h4{
+.video:hover h5{
 	color:white;
-	
+}
+project{
+	margin: 0px
 }
