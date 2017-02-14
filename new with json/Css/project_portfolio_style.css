@@ -74,6 +74,10 @@ nav div ul{
 	.hide-m{
 		display: none;
 	}
+	nav{
+		margin-top: -9px;
+		margin-left: 0px;
+	}
 }
 
 /*grid for tablets: */
