@@ -1,7 +1,12 @@
-/*basic styles*/
+/*basic styles
+1st layer black -->html
+2nd layer grey --> main
+3th layer white --> thirdlayer
+4th layer mixed --> 4layer
+*/
 html {
 	font-family: "Lucida Sans", sans-serif;
-	background-color: green;
+	background-color: black;
 }
 nav{
 	height: 50px;
@@ -10,9 +15,9 @@ nav{
 }
 main{
 	margin-top: -60px;
-	border:solid green 1px;
-	background-color: forestgreen;
-	box-shadow: darkgreen 3px 3px 8px 1px;
+	border:solid grey 1px;
+	background-color: darkgray;
+	box-shadow: grey 3px 3px 8px 1px;
 	border-radius:2%
 }
 nav div ul{
@@ -107,12 +112,8 @@ nav div ul{
 	.dropdown-content a{
 		font-size: 16px;
 	}
-	.tab2{
+	.twoSideBySide{
 		margin: 3%;
-		width: 44%;
-	}
-	.tab1{
-		margin:3%;
 		width: 44%;
 	}
 	nav{
@@ -145,12 +146,8 @@ nav div ul{
 	nav ul li{
 		box-shadow: 0px 3px 8px 1px darkgreen;
 	}
-	.tab2{
+	.twoSideBySide{
 		margin: 3%;
-		width: 44%;
-	}
-	.tab1{
-		margin:3%;
 		width: 44%;
 	}
 }
@@ -281,11 +278,24 @@ footer ul li a:hover{
 P{
 	color: azure
 }
+.thirdLayer{
+	background-color: lime;
+	box-shadow: green 3px 3px 8px 1px;
+	border-radius:2%;
+	border: green solid 1px;
+}
+.twoSideBySide{
+	padding: 15px;
+	float:left;
+}
+.experimentAndSchoolprjt{
+	height:320px;
+}
 .thirdBack{
 	background-color: lime;
 	box-shadow: darkgreen 3px 3px 8px 3px;
 	border-radius:2%;
-	border: green solid 3px;
+	border: green solid 1px;
 	padding: 10px;
 	margin:0px;
 }
@@ -293,29 +303,14 @@ P{
 	background-color: lime;
 	box-shadow: darkgreen 3px 3px 8px 3px;
 	border-radius:2%;
-	border: green solid 3px;
+	border: green solid 1px;
 	padding: 10px;
 	margin:0px;
-	height:320px
+	
+	height:320px;
 }
 .experiment{
 	height:300px;
-}
-.tab1{
-	float:left;
-	background-color: lime;
-	box-shadow: green 3px 3px 8px 1px;
-	border-radius:2%;
-	border: green solid 1px;
-	padding: 15px
-}
-.tab2{
-	float:left;
-	background-color: lime;
-	box-shadow: green 3px 3px 8px 1px;
-	border-radius:2%;
-	border: green solid 1px;
-	padding: 15px
 }
 .video{
 	cursor: pointer;
