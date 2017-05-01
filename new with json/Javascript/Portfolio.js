@@ -6,11 +6,11 @@ function toggleMenu(navigate) {
 	x = document.getElementById("nav");
 	y = document.getElementById("logo");
 		
-	if (x.className === "col-10 col-m-12" || navigate === 1) {
+	if (x.className === "navWidth" || navigate === 1) {
 		x.className = "hideNav";
 		navigate = 0
 	} else {
-		x.className = "col-10 col-m-12";
+		x.className = "navWidth";
 	}
 }
 
