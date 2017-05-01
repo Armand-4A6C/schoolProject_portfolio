@@ -82,7 +82,6 @@ nav div ul{
 		margin-left: 0px;
 	}
 }
-
 /*grid for tablets: */
 @media only screen and (min-width: 600px) and (max-width: 900px)  {
 	.col-m-1 {width: 8.33%;}
@@ -107,19 +106,11 @@ nav div ul{
 	.dropdown-content a{
 		font-size: 16px;
 	}
-	.tab2{
-		margin: 3%;
-		width: 44%;
-	}
-	.tab1{
-		margin:3%;
-		width: 44%;
 	}
 	nav{
 		top: -17px
 	}
 }
-
 /* grid for desktop: */
 @media only screen and (min-width: 900px) {/*768pix previously*/
 	.col-1 {width: 8.33%;}
@@ -144,14 +135,6 @@ nav div ul{
 	}
 	nav ul li{
 		box-shadow: 0px 3px 8px 1px darkgreen;
-	}
-	.tab2{
-		margin: 3%;
-		width: 44%;
-	}
-	.tab1{
-		margin:3%;
-		width: 44%;
 	}
 }
 
@@ -248,7 +231,6 @@ footer ul li{
 	border:solid green 1px;
 	height: 30px;
 	width: 24.99%;
-
 }
 footer ul li a{
 	display: block;
@@ -281,41 +263,57 @@ footer ul li a:hover{
 P{
 	color: azure
 }
-.thirdBack{
-	background-color: lime;
+.layerTwo{
+	background-color: grey;
 	box-shadow: darkgreen 3px 3px 8px 3px;
 	border-radius:2%;
 	border: green solid 3px;
-	padding: 10px;
 	margin:0px;
 }
-.schoolPrjt{
-	background-color: lime;
+.tab1{
+	background-color: blue;
+	box-shadow: darkgreen 3px 3px 8px 1px;
+	border-radius:2%;
+	border: green solid 1px;
+
+	float:left;
+	padding: 15px
+}
+.tab2{
+	background-color: blue;
+	box-shadow: darkgreen 3px 3px 8px 1px;
+	border-radius:2%;
+	border: green solid 1px;
+
+	float:left;
+	padding: 15px
+}
+.twoBesideEachOther{
+	float:left;
+	padding: 15px
+}
+.thirdBack{
+	background-color: orange;
 	box-shadow: darkgreen 3px 3px 8px 3px;
 	border-radius:2%;
 	border: green solid 3px;
-	padding: 10px;
 	margin:0px;
+
+	padding: 10px;
+
+}
+.schoolPrjt{
+	background-color: yellow;
+	box-shadow: darkgreen 3px 3px 8px 3px;
+	border-radius:2%;
+	border: green solid 3px;
+	margin:0px;
+
+	padding: 10px;
 	height:320px
 }
 .experiment{
 	height:300px;
-}
-.tab1{
-	float:left;
-	background-color: lime;
-	box-shadow: green 3px 3px 8px 1px;
-	border-radius:2%;
-	border: green solid 1px;
-	padding: 15px
-}
-.tab2{
-	float:left;
-	background-color: lime;
-	box-shadow: green 3px 3px 8px 1px;
-	border-radius:2%;
-	border: green solid 1px;
-	padding: 15px
 }
 .video{
 	cursor: pointer;
