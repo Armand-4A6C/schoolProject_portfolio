@@ -106,9 +106,6 @@ nav div ul{
 	.show-s{
 		display: none;
 	}
-	nav ul li{
-		box-shadow: 0px 3px 8px 1px darkgreen;
-	}
 	.dropdown-content a{
 		font-size: 16px;
 	}
@@ -143,9 +140,6 @@ nav div ul{
 		left: 8.33%;
 		margin-left:0px
 	}
-	nav ul li{
-		box-shadow: 0px 3px 8px 1px darkgreen;
-	}
 	.twoSideBySide{
 		margin: 3%;
 		width: 44%;
@@ -175,19 +169,13 @@ nav div ul li a{
 	height: 100%;
 	text-align: center;
 	padding-top: 5%;
-	background: linear-gradient(green,lime,green);
-	color:azure;
 	font-weight: bold;
 	font-size: 16px;
 	cursor: pointer;
 }
-nav div ul li a:hover{
-	background: linear-gradient(green,greenyellow,green);
-}
 nav div ul li{
 	list-style: none;
 	float:left;
-	border:solid green 1px;
 	height: 40px;
 	width: 24.99%;
 }
@@ -195,14 +183,11 @@ nav div ul li{
 	float: left;
 	width: 40px;
 	height: 40px;
-	border: green solid 1px;
 	background-image: url("https://kvomtq-dm2306.files.1drv.com/y3mTOfdhp08kdg4FqiFW-PZ2RxZtrW-1cpHCWm_EiGBMaVpHQr7gmQImct2PuHd56JLJLxYu_H40OGzEvNZLgnQ0TPeAG_qEtfuP9LUm1auHNKimqwkmn6Qk2gnSMJ5fLwGOO1o7jkOw0fzwWYArXwgDx-h3_qmQo203ue5FIY_oOA?width=40&height=40&cropmode=none");
-	box-shadow: 0px 3px 8px 1px darkgreen;
 }
 
 /*dropdown menu*/
 .dropbtn {
-	color: azure;
 	cursor: pointer;
 }
 
@@ -220,10 +205,8 @@ nav div ul li{
 }
 
 .dropdown-content a {
-	color: azure;
 	text-decoration: none;
 	display: block;
-	border: solid green 1px;
 }
 .projecten:hover .dropdown-content {
 	display: block;
@@ -242,7 +225,6 @@ footer ul{
 footer ul li{
 	list-style: none;
 	float:left;
-	border:solid green 1px;
 	height: 30px;
 	width: 24.99%;
 
@@ -254,17 +236,9 @@ footer ul li a{
 	height: 100%;
 	text-align: center;
 	padding-top: 3%;
-	background: linear-gradient(green,lime,green);
-	color:azure;
 	font-weight: bold;
 	font-size: 11px;
-	text-shadow: 3px 2px 2px green;
-	box-shadow: 3px 3px 8px 1px darkgreen;
 	cursor: pointer;
-
-}
-footer ul li a:hover{
-	background: linear-gradient(green,greenyellow,green);
 }
 .kop1{
 	color:royalblue
@@ -276,46 +250,30 @@ footer ul li a:hover{
 	color: darkblue;
 }
 P{
-	color: azure
+	color: black
 }
 .thirdLayer{
-	background-color: lime;
-	box-shadow: green 3px 3px 8px 1px;
+	background-color: white;
+	box-shadow: grey 3px 3px 8px 1px;
 	border-radius:2%;
-	border: green solid 1px;
+	border: grey solid 1px;
 }
 .twoSideBySide{
 	padding: 15px;
 	float:left;
 }
-.experimentAndSchoolprjt{
-	height:320px;
-}
-.thirdBack{
-	background-color: lime;
-	box-shadow: darkgreen 3px 3px 8px 3px;
-	border-radius:2%;
-	border: green solid 1px;
+.multiBlock{
 	padding: 10px;
 	margin:0px;
+	height:320px;
+	border-width: 3px;
 }
-.schoolPrjt{
-	background-color: lime;
-	box-shadow: darkgreen 3px 3px 8px 3px;
-	border-radius:2%;
-	border: green solid 1px;
+.project{
 	padding: 10px;
 	margin:0px;
-	
-	height:320px;
-}
-.experiment{
-	height:300px;
 }
 .video{
 	cursor: pointer;
-	border: solid green 2px;
-	background: linear-gradient(green,lime,green);
 	width:100%;
 	margin-left: 0px;
 	margin-top: 8px;
@@ -325,12 +283,21 @@ P{
 .video h5{
 	color:aliceblue;
 }
-.video:hover{
-	background: linear-gradient(green,greenyellow,green);
-}
 .video:hover h5{
 	color:white;
 }
-project{
-	margin: 0px
+
+.fourthLayerExtra, ul li a, .logo{
+	text-shadow: 3px 2px 2px black;
+	box-shadow: 3px 3px 8px 1px black;
+}
+fourthLayerBorder, ul li, ul li div, .video, .logo{
+	border: solid black 1px;
+}
+fourthlayer, ul li a, .video{
+	background: linear-gradient(black,grey,black);
+	color: azure;
+}
+fourthlayer, ul li a:hover, .video:hover{
+	background: linear-gradient(black,white,black);
 }
