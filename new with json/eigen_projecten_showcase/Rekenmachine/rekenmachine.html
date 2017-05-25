@@ -1,0 +1,48 @@
+<!--Auteur Armand van Alphen-->
+<!DOCTYPE html>
+<html lang=nl>
+	<head>
+		<link rel="stylesheet" href="rekenmachine.css">
+		<meta charset="utf-8">
+		<title>rekenmachine</title>
+	</head>
+	<body>
+		<div_numbers class=rekenmachine>	
+			<div_display id=display>
+			</div_display>
+			<div_row class=row>
+				<button class=broadrow onclick="reset()">CE</button>				
+				<button class=broadrow onclick="deletelastline()">C</button>
+				<button class=broadrow onclick="deletelastcharacter()">&#8592</button>
+			</div_row>
+			<div_row class=row>
+				<button onclick="input_one()">1</button>
+				<button onclick="input_two()">2</button>
+				<button onclick="input_three()">3</button>
+				<button onclick="input_showmath()">=</button>
+			</div_row>
+			<br><br>
+			<div_row class=row>
+				<button onclick="input_four()">4</button>
+				<button onclick="input_five()">5</button>
+				<button onclick="input_six()">6</button>
+				<button onclick="input_add()">+</button>
+			</div_row>
+			<br><br>
+			<div_row class=row>
+				<button onclick="input_seven()">7</button>
+				<button onclick="input_eight()">8</button>
+				<button onclick="input_nine()">9</button>
+				<button onclick="input_subtract()">-</button>
+			</div_row>
+			<br><br>
+			<div_row class=row>
+				<button onclick="input_comma()">,</button>
+				<button onclick="input_zero()">0</button>
+				<button onclick="input_multiply()">*</button>
+				<button onclick="input_divide()">/</button>
+			</div_row>
+		</div_numbers>
+		<script src="Rekenmachine.js"></script>
+	</body>
+</html>
