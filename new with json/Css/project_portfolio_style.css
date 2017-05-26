@@ -6,7 +6,43 @@
 */
 html {
 	font-family: "Lucida Sans", sans-serif;
-	background-color: black;
+	display: block;
+	background: radial-gradient(#155, #000);
+	z-index: 0;
+}
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+
+}
+#universe {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-image: url(../star_sky.png);
+	background-size: contain;
+	-webkit-animation: flash linear 10s infinite;
+	animation: flash linear 10s infinite;
+	z-index: -1;
+}
+
+@-webkit-keyframes flash{
+	0% { opacity: 0.9;}
+	25% { opacity: 0.7;}
+	50% { opacity: 0.5;}
+	75% { opacity: 0.7;}
+	100% { opacity: 0.9;}
+
+}
+@keyframes flash{
+	0% { opacity: 0.9;}
+	25% { opacity: 0.7;}
+	50% { opacity: 0.5;}
+	75% { opacity: 0.7;}
+	100% { opacity: 0.9;}
+
 }
 nav{
 	height: 50px;
@@ -14,10 +50,10 @@ nav{
 	margin-left: -1%;
 }
 main{
-	margin-top: -8%;
+	margin-top: -4%;
 	border:solid grey 1px;
-	background-color: darkgray;
-	border-radius:2%
+	border-radius:2%;
+	background: rgba(90, 90, 90, 0.6);
 }
 /*grid for mobile phones: */
 [class*="col-"] {
@@ -256,6 +292,7 @@ P{
 	box-shadow: black 3px 3px 8px 1px;
 	border-radius:2%;
 	border: grey solid 1px;
+	background-color: rgba(255, 255, 255, 0.8);
 }
 .twoSideBySide{
 	padding: 15px;
