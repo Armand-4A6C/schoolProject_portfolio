@@ -21,10 +21,10 @@ html, body{
 	height: 100%;
 	width: 100%;
 	position: fixed;
-	background-image: url(../star_sky.png);
+	background-image: url(star_sky.png);
 	background-size: contain;
-	-webkit-animation: flash linear 10s infinite;
-	animation: flash linear 10s infinite;
+	-webkit-animation: flash ease-in-out 7s infinite;
+	animation: flash ease-in-out 7s infinite;
 	z-index: -1;
 }
 
