@@ -16,32 +16,56 @@ html, body{
 	margin: 0px;
 
 }
-#universe {
+#universe1 {
 	margin: 0px;
 	height: 100%;
 	width: 100%;
 	position: fixed;
-	background-image: url(star_sky.png);
+	background-image: url(star_skyL1.png);
 	background-size: contain;
-	-webkit-animation: flash ease-in-out 7s infinite;
-	animation: flash ease-in-out 7s infinite;
+	-webkit-animation: flash ease-in-out 6s infinite;
+	animation: flash ease-in-out 6s infinite;
+	z-index: -3;
+}
+#universe2 {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-image: url(star_skyL2.png);
+	background-size: contain;
+	-webkit-animation: flash ease-in-out 3.8s infinite;
+	animation: flash ease-in-out 3.8s infinite;
+	z-index: -2;
+}
+#universe3 {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-image: url(star_skyL3.png);
+	background-size: contain;
+	-webkit-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+	-webkit-animation: flash ease-in-out 3s infinite;
+	animation: flash ease-in-out 3s infinite;
 	z-index: -1;
 }
 
 @-webkit-keyframes flash{
-	0% { opacity: 0.9;}
-	25% { opacity: 0.7;}
-	50% { opacity: 0.5;}
-	75% { opacity: 0.7;}
-	100% { opacity: 0.9;}
+	0% { opacity: 0.95;}
+	25% { opacity: 0.8;}
+	50% { opacity: 0.6;}
+	75% { opacity: 0.8;}
+	100% { opacity: 0.95;}
 
 }
 @keyframes flash{
-	0% { opacity: 0.9;}
-	25% { opacity: 0.7;}
-	50% { opacity: 0.5;}
-	75% { opacity: 0.7;}
-	100% { opacity: 0.9;}
+	0% { opacity: 0.95;}
+	25% { opacity: 0.8;}
+	50% { opacity: 0.6;}
+	75% { opacity: 0.8;}
+	100% { opacity: 0.95;}
 
 }
 nav{
@@ -50,7 +74,7 @@ nav{
 	margin-left: -1%;
 }
 main{
-	margin-top: -4%;
+
 	border:solid grey 1px;
 	border-radius:2%;
 	background: rgba(90, 90, 90, 0.6);
@@ -301,7 +325,7 @@ P{
 .multiBlock{
 	padding: 10px;
 	margin:0px;
-	height:320px;
+	height:380px;
 	border-width: 3px;
 }
 .project{
