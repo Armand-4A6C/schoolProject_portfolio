@@ -1,0 +1,7 @@
+Code 1
+	cd C:\Users\gebruiker\OneDrive - ROC Midden Nederland\School\vakken\Z-github repositories\schoolProject_portfolio\new_website\building_website
+
+
+Code 2
+	sass --watch scss/index.scss:css
+	sass --watch scss:css
