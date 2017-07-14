@@ -129,25 +129,22 @@ nav {
 ul {
   list-style-type: none; }
 
+.main-nav li a,
+.main-nav li div,
+.main-nav li div a {
+  height: 100%;
+  width: 100%; }
+
+.main-nav li {
+  padding: 0px; }
+
 @media only screen and (min-width: 600px) {
   .hid-if-mob {
     display: block; }
 
-  .main-nav > li {
-    height: 60px; }
-
-  .main-nav li a,
-  .main-nav li div,
-  .main-nav li div a {
-    height: 100%;
-    width: 100%; }
-
-  .main-nav li a {
+  .main-nav ul li a {
     display: block;
-    padding-top: 15px; }
-
-  .main-nav li {
-    padding: 0px; } }
+    padding-top: 15px; } }
 @media only screen and (min-width: 600px) {
   .projecten, .cvee {
     position: relative; }
@@ -162,6 +159,28 @@ ul {
 
   .projecten:hover .dropdown-content, .cvee:hover .dropdown-content {
     display: block; } }
+.main-footer div,
+.main-footer ul li,
+.main-footer ul li a {
+  padding: 0px; }
+
+.main-footer ul {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px; }
+
+.main-footer ul {
+  height: 60px; }
+
+.main-footer ul li,
+.main-footer ul li a {
+  height: 100%;
+  width: 100%; }
+
+.main-footer ul li a {
+  display: block;
+  padding-top: 15px; }
+
 .main-nav li,
 .main-nav li a,
 .dropdown-content a,
@@ -170,6 +189,10 @@ footer ul li a {
   text-decoration: none;
   cursor: pointer;
   text-align: center; }
+
+main {
+  position: relative;
+  padding-left: 15px; }
 
 html {
   font-family: "Lucida Sans", sans-serif;
@@ -246,5 +269,30 @@ html, body {
     opacity: 0.7; }
   100% {
     opacity: 1; } }
+.main {
+  border: solid grey 1px;
+  border-radius: 2%;
+  background: rgba(90, 90, 90, 0.6); }
+
+.thirdLayer {
+  background-color: white;
+  box-shadow: black 3px 3px 8px 1px;
+  border-radius: 2%;
+  border: grey solid 1px;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.fourthLayerExtra, ul li a, .logo {
+  text-shadow: 3px 2px 2px black;
+  box-shadow: 3px 3px 8px 1px black; }
+
+fourthLayerBorder, ul li, .video, .logo {
+  border: solid black 1px; }
+
+fourthlayer, ul li a, .video {
+  background: linear-gradient(black, grey, black);
+  color: azure; }
+
+fourthlayer, ul li a:hover, .video:hover {
+  background: linear-gradient(black, white, black); }
 
 /*# sourceMappingURL=portfolio.css.map */

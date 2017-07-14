@@ -1,0 +1,33 @@
+.main-footer div,
+.main-footer ul li,
+.main-footer ul li a {
+    padding: 0px;
+}
+
+.main-footer ul {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px
+}
+
+
+//selects all the div child elements of main-nav and no further decendents
+.main-footer ul {
+    height: 60px;
+}
+
+.main-footer ul li,
+.main-footer ul li a {
+    height: 100%;
+    width: 100%;
+}
+
+.main-footer ul li a {
+    display: block;
+    padding-top: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+
+
+}

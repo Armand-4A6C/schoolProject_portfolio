@@ -1,0 +1,18 @@
+// ========================
+// 4th layer colors
+// ========================
+
+.fourthLayerExtra, ul li a, .logo{
+	text-shadow: 3px 2px 2px black;
+	box-shadow: 3px 3px 8px 1px black;
+}
+fourthLayerBorder, ul li, .video, .logo{
+	border: solid black 1px;
+}
+fourthlayer, ul li a, .video{
+	background: linear-gradient(black,grey,black);
+	color: azure;
+}
+fourthlayer, ul li a:hover, .video:hover{
+	background: linear-gradient(black,white,black);
+}
