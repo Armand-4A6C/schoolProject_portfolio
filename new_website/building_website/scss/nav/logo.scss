@@ -4,12 +4,14 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
+    margin-top: -1px;
 }
 
 // makes sure that the navigation looks as 1 thing
 @media only screen and (min-width: 600px) {
     .logo {
-        background-position: right;
+        float: left;
+        width: 60px;
     }
-
 }

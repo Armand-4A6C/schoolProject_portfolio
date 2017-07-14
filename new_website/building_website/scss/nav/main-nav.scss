@@ -15,18 +15,12 @@
     padding: 15px;
 }
 
-// sets the basis height
+// sets the height of nav elements
+.logo,
 .main-nav li,
-.logo {
+.main-nav li,
+.main-nav li a {
     height: 60px;
-}
-
-// inherits the height through out the nav
-.main-nav li,
-.main-nav li a,
-.main-nav li div,
-.main-nav li div a {
-    height: 100%;
 }
 
 //removes style type
@@ -41,6 +35,10 @@ ul {
 
 //not a phone
 @media only screen and (min-width: 600px) {
+    .main-nav {
+        padding-left: 60px;
+        margin-left: -60px;
+    }
 
     //shows the dropdown button
     .hid-if-mob {
