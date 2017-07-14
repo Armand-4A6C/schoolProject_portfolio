@@ -27,9 +27,14 @@ footer li a,
 }
 
 // sets the hover background color for the 4th layer
-.fourthlayer,
+.fourthlayer:hover,
 .main-nav li a:hover,
 footer li a:hover,
-.video:hover {
+.video:hover,
+
+.fourthlayer:focus,
+.main-nav li a:focus,
+footer li a:focus,
+.video:focus {
 	background: linear-gradient(black,white,black);
 }
