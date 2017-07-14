@@ -3,5 +3,4 @@ Code 1
 
 
 Code 2
-	sass --watch scss/index.scss:css
-	sass --watch scss:css
+	sass --watch scss/index.scss:css/portfolio.css

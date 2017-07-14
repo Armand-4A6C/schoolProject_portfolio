@@ -1,0 +1,19 @@
+.logo {
+    background-image:url(http://via.placeholder.com/60x60);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: -16px;
+    height:60px;
+}
+
+nav {
+    margin-right: -16px;
+}
+
+@media only screen and (min-width: 600px) {
+    .logo {
+        background-position: right;
+    }
+
+}

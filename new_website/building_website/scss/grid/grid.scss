@@ -9,14 +9,21 @@
 * {
     box-sizing: border-box;
 }
+
 /* grid support function2: */
 [class*="col-"] {
     float: left;
     padding: 15px;
 }
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
+    border: solid green 1px;
+}
+
+.hid-no-desk {
+    display:none;
 }
 
 /* For tablets: */
@@ -49,4 +56,9 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+
+    .hid-no-desk {
+        display:block;
+        border-color: red;
+    }
 }

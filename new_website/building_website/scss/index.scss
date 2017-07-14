@@ -1,7 +1,7 @@
-//===========================
-// Grid Import
-//===========================
-@import 'grid/grid';
+// ========================================
+// Importing Project files
+// ========================================
 
-//sass --watch scss/index.scss:css/stylesheet.css
-//h
+@import 'grid/index';
+@import 'nav/index';
+@import 'layout/index';

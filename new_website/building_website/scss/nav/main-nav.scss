@@ -1,0 +1,49 @@
+.main-nav{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.hid-if-mob {
+    display: none;
+}
+
+.main-nav > .dropdown-nav {
+    padding: 0px;
+}
+
+.dropbtn {
+    padding: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+//not a phone
+@media only screen and (min-width: 600px) {
+    .hid-if-mob {
+        display: block;
+    }
+
+    //selects all the div child elements of main-nav and no further decendents
+    .main-nav > li {
+        height: 60px;
+    }
+
+    .main-nav li a,
+    .main-nav li div,
+    .main-nav li div a {
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-nav li a {
+        display: block;
+        padding-top: 15px;
+    }
+    .main-nav li {
+        padding: 0px;
+
+    }
+
+}

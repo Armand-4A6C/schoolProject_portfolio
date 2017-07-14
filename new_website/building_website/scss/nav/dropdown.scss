@@ -1,0 +1,19 @@
+@media only screen and (min-width: 600px) {
+    .projecten , .cvee {
+    	position: relative;
+    }
+
+    .dropdown-content {
+    	display: none;
+    	position: absolute;
+        margin-top: -1px;
+    }
+
+    .dropdown-content a {
+    	display: block;
+    }
+    
+    .projecten:hover .dropdown-content, .cvee:hover .dropdown-content {
+    	display: block;
+    }
+}
