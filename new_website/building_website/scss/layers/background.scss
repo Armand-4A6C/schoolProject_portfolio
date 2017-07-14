@@ -1,3 +1,4 @@
+// sets the 1st background layer
 html {
 	font-family: "Lucida Sans", sans-serif;
 	display: block;
@@ -5,13 +6,8 @@ html {
 	z-index: 0;
     background-attachment: fixed;
 }
-html, body{
-	height: 100%;
-	width: 100%;
-	margin: 0px;
-}
 
-/* background animation */
+// 2nd background layer
 #universe1 {
 	margin: 0px;
 	height: 100%;
@@ -24,6 +20,8 @@ html, body{
 	z-index: -3;
     background-attachment: fixed;
 }
+
+// 3th background layer
 #universe2 {
 	margin: 0px;
 	height: 100%;
@@ -38,6 +36,8 @@ html, body{
 	z-index: -2;
     background-attachment: fixed;
 }
+
+// 4th background layer
 #universe3 {
 	margin: 0px;
 	height: 100%;
@@ -53,19 +53,20 @@ html, body{
     background-attachment: fixed;
 }
 
-@-webkit-keyframes flash{
+// animation for webkit based browsers
+@-webkit-keyframes flash {
 	0% { opacity: 0.95;}
 	25% { opacity: 0.7;}
 	50% { opacity: 0.5;}
 	75% { opacity: 0.7;}
 	100% { opacity: 0.95;}
-
 }
-@keyframes flash{
-	0% { opacity: 1;}
+
+// animation for most browsers
+@keyframes flash {
+	0% { opacity: 0.95;}
 	25% { opacity: 0.7;}
 	50% { opacity: 0.5;}
 	75% { opacity: 0.7;}
-	100% { opacity: 1;}
-
+	100% { opacity: 0.95;}
 }

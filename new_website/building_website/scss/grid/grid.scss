@@ -1,32 +1,36 @@
-/* makes sure you'll get rows underneath eachother: */
+/*
+ =======================================================================
+ The whole project is build with sass for clear descriptions look there
+ =======================================================================
+*/
+
+// makes sure you'll get rows underneath eachother:
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
 
-/* grid support function1: */
+// makes padding part of element height and with for all elements
 * {
     box-sizing: border-box;
 }
 
-/* grid support function2: */
+// sets the standards for every class with col- inside of it :
 [class*="col-"] {
     float: left;
     padding: 15px;
-}
 
-/* For mobile phones: */
-[class*="col-"] {
+    // sets the standard width for mobile version
     width: 100%;
-    //border: solid green 1px;
 }
 
+//removes the desktop alignng blocks
 .hid-no-desk {
     display:none;
 }
 
-/* For tablets: */
+// For tablets:
 @media only screen and (min-width: 600px) {
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
@@ -42,7 +46,7 @@
     .col-m-12 {width: 100%;}
 }
 
-/* For desktop: */
+// For desktop:
 @media only screen and (min-width: 768px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -57,9 +61,11 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
+    // aligning blocks for desktop view
     .hid-no-desk {
         display:block;
         height: 30px;
-        //border-color: red;
+        width: 8.33%;
+        float:left;
     }
 }

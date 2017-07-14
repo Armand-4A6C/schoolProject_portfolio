@@ -1,26 +1,24 @@
-/* makes sure you'll get rows underneath eachother: */
+/*
+ =======================================================================
+ The whole project is build with sass for clear descriptions look there
+ =======================================================================
+*/
 .row::after {
   content: "";
   clear: both;
   display: table; }
 
-/* grid support function1: */
 * {
   box-sizing: border-box; }
 
-/* grid support function2: */
 [class*="col-"] {
   float: left;
-  padding: 15px; }
-
-/* For mobile phones: */
-[class*="col-"] {
+  padding: 15px;
   width: 100%; }
 
 .hid-no-desk {
   display: none; }
 
-/* For tablets: */
 @media only screen and (min-width: 600px) {
   .col-m-1 {
     width: 8.33%; }
@@ -57,7 +55,6 @@
 
   .col-m-12 {
     width: 100%; } }
-/* For desktop: */
 @media only screen and (min-width: 768px) {
   .col-1 {
     width: 8.33%; }
@@ -97,19 +94,26 @@
 
   .hid-no-desk {
     display: block;
-    height: 30px; } }
+    height: 30px;
+    width: 8.33%;
+    float: left; } }
+[class*="col-"] {
+  border: solid green 1px; }
+
+.hid-no-desk {
+  border: solid red 1px; }
+
 .logo {
   background-image: url(http://via.placeholder.com/60x60);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  margin-top: -1px; }
+  margin-top: 0px; }
 
 @media only screen and (min-width: 600px) {
   .logo {
-    float: left;
-    width: 60px; } }
+    float: left; } }
 .main-nav {
   margin-top: 0px; }
 
@@ -118,15 +122,6 @@
 .main-nav li {
   padding: 0px; }
 
-.dropbtn {
-  padding: 15px; }
-
-.logo,
-.main-nav li,
-.main-nav li,
-.main-nav li a {
-  height: 60px; }
-
 ul {
   list-style-type: none; }
 
@@ -134,27 +129,38 @@ ul {
   display: none; }
 
 @media only screen and (min-width: 600px) {
-  .main-nav {
-    padding-left: 60px;
-    margin-left: -60px; }
-
   .hid-if-mob {
     display: block; } }
-.dropdown-content {
-  margin-top: -1px; }
-
 @media only screen and (min-width: 600px) {
   .projecten, .cvee {
     position: relative; }
 
   .dropdown-content {
-    display: none; }
+    display: none;
+    margin-top: -1px; }
 
   .projecten:hover .dropdown-content,
   .cvee:hover .dropdown-content {
     display: block;
     position: absolute;
     border: 1px solid black; } }
+.logo,
+.main-nav li,
+.main-nav li,
+.main-nav li a {
+  height: 50px; }
+
+.main-nav li a,
+.dropdown-content a {
+  padding: 15px; }
+
+@media only screen and (min-width: 600px) {
+  .main-nav {
+    padding-left: 50px;
+    margin-left: -50px; }
+
+  .logo {
+    width: 50px; } }
 .main-footer div,
 .main-footer ul,
 .main-footer ul li,
@@ -162,14 +168,14 @@ ul {
   padding: 0px; }
 
 .main-footer ul {
-  height: 60px; }
+  height: 40px; }
 
 .main-footer ul li,
 .main-footer ul li a {
   height: 100%; }
 
 .main-footer ul li a {
-  padding-top: 15px; }
+  padding-top: 10px; }
 
 .main-nav li,
 .main-nav li a,
@@ -180,6 +186,11 @@ footer ul li a {
   cursor: pointer;
   text-align: center; }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px; }
+
 html {
   font-family: "Lucida Sans", sans-serif;
   display: block;
@@ -187,12 +198,6 @@ html {
   z-index: 0;
   background-attachment: fixed; }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0px; }
-
-/* background animation */
 #universe1 {
   margin: 0px;
   height: 100%;
@@ -246,7 +251,7 @@ html, body {
     opacity: 0.95; } }
 @keyframes flash {
   0% {
-    opacity: 1; }
+    opacity: 0.95; }
   25% {
     opacity: 0.7; }
   50% {
@@ -254,7 +259,7 @@ html, body {
   75% {
     opacity: 0.7; }
   100% {
-    opacity: 1; } }
+    opacity: 0.95; } }
 .main {
   border: solid grey 1px;
   border-radius: 2%;
@@ -267,18 +272,29 @@ html, body {
   border: grey solid 1px;
   background-color: rgba(255, 255, 255, 0.8); }
 
-.fourthLayerExtra, ul li a, .logo {
+.fourthLayerExtra,
+ul li a,
+.logo {
   text-shadow: 3px 2px 2px black;
   box-shadow: 3px 3px 8px 1px black; }
 
-fourthLayerBorder, ul li, .video, .logo {
+.fourthLayerBorder,
+.main-nav li,
+footer li a,
+.video, .logo {
   border: solid black 1px; }
 
-fourthlayer, ul li a, .video {
+.fourthlayer,
+.main-nav li a,
+footer li a,
+.video {
   background: linear-gradient(black, grey, black);
   color: azure; }
 
-fourthlayer, ul li a:hover, .video:hover {
+.fourthlayer,
+.main-nav li a:hover,
+footer li a:hover,
+.video:hover {
   background: linear-gradient(black, white, black); }
 
 /*# sourceMappingURL=portfolio.css.map */

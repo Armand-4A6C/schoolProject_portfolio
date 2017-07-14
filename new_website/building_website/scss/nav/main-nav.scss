@@ -10,35 +10,18 @@
     padding: 0px;
 }
 
-// centers text inside the dropdown menu
-.dropbtn {
-    padding: 15px;
-}
-
-// sets the height of nav elements
-.logo,
-.main-nav li,
-.main-nav li,
-.main-nav li a {
-    height: 60px;
-}
-
-//removes style type
+// removes style type
 ul {
     list-style-type: none;
 }
 
-//hides the dropdown button
+// hides the dropdown button
 .hid-if-mob {
     display: none;
 }
 
-//not a phone
+// tablet and desktop view
 @media only screen and (min-width: 600px) {
-    .main-nav {
-        padding-left: 60px;
-        margin-left: -60px;
-    }
 
     //shows the dropdown button
     .hid-if-mob {

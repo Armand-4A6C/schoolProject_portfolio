@@ -8,8 +8,9 @@
 
 // sets the height of the footer
 .main-footer ul {
-    height: 60px;
+    height: 40px;
 }
+
 // inherite the height trough all layers of the footer
 .main-footer ul li,
 .main-footer ul li a {
@@ -18,5 +19,5 @@
 
 // centers the text in the footer
 .main-footer ul li a {
-    padding-top: 15px;
+    padding-top: 10px;
 }

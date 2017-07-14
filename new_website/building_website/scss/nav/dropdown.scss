@@ -1,9 +1,6 @@
-.dropdown-content {
-    //position: relative;
-    margin-top: -1px;
-}
-
 @media only screen and (min-width: 600px) {
+
+    //makes sure the dropdown shows propely
     .projecten , .cvee {
     	position: relative;
     }
@@ -11,6 +8,7 @@
     //hides dropdown-content
     .dropdown-content {
         display: none;
+        margin-top: -1px;
     }
 
     //shows the dropdown menu when hovering
