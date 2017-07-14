@@ -1,19 +1,21 @@
+.dropdown-content {
+    //position: relative;
+    margin-top: -1px;
+}
+
 @media only screen and (min-width: 600px) {
     .projecten , .cvee {
     	position: relative;
     }
 
+    //hides dropdown-content
     .dropdown-content {
-    	display: none;
-    	position: absolute;
-        margin-top: -1px;
+        display: none;
     }
 
-    .dropdown-content a {
-    	display: block;
-    }
-    
-    .projecten:hover .dropdown-content, .cvee:hover .dropdown-content {
+    //shows the dropdown menu when hovering
+    .projecten:hover .dropdown-content,
+    .cvee:hover .dropdown-content {
     	display: block;
     }
 }

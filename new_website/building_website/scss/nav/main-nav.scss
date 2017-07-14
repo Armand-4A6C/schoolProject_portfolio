@@ -1,45 +1,49 @@
-.main-nav{
-    padding-top: 0px;
+// sticks the main navigation to the top
+.main-nav {
     margin-top: 0px;
 }
 
-.hid-if-mob {
-    display: none;
-}
-
-.main-nav > .dropdown-nav {
+// removes unnecessary padding inherited from the grid
+.main-nav,
+.main-nav > .dropdown-nav,
+.main-nav li {
     padding: 0px;
 }
 
+// centers text inside the dropdown menu
 .dropbtn {
     padding: 15px;
 }
 
-ul {
-    list-style-type: none;
+// sets the basis height
+.main-nav li,
+.logo {
+    height: 60px;
 }
 
+// inherits the height through out the nav
+.main-nav li,
 .main-nav li a,
 .main-nav li div,
 .main-nav li div a {
     height: 100%;
-    width: 100%;
 }
 
-.main-nav li {
-    padding: 0px;
+//removes style type
+ul {
+    list-style-type: none;
+}
 
+//hides the dropdown button
+.hid-if-mob {
+    display: none;
 }
 
 //not a phone
 @media only screen and (min-width: 600px) {
+
+    //shows the dropdown button
     .hid-if-mob {
         display: block;
     }
-
-    .main-nav ul li a {
-        display: block;
-        padding-top: 15px;
-    }
-
 }

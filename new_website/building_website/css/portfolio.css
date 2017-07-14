@@ -103,82 +103,68 @@
   background-image: url(http://via.placeholder.com/60x60);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  margin-right: -16px;
-  height: 60px; }
-
-nav {
-  margin-right: -16px; }
+  background-position: center; }
 
 @media only screen and (min-width: 600px) {
   .logo {
     background-position: right; } }
 .main-nav {
-  padding-top: 0px;
   margin-top: 0px; }
 
-.hid-if-mob {
-  display: none; }
-
-.main-nav > .dropdown-nav {
+.main-nav,
+.main-nav > .dropdown-nav,
+.main-nav li {
   padding: 0px; }
 
 .dropbtn {
   padding: 15px; }
 
-ul {
-  list-style-type: none; }
+.main-nav li,
+.logo {
+  height: 60px; }
 
+.main-nav li,
 .main-nav li a,
 .main-nav li div,
 .main-nav li div a {
-  height: 100%;
-  width: 100%; }
+  height: 100%; }
 
-.main-nav li {
-  padding: 0px; }
+ul {
+  list-style-type: none; }
+
+.hid-if-mob {
+  display: none; }
 
 @media only screen and (min-width: 600px) {
   .hid-if-mob {
-    display: block; }
+    display: block; } }
+.dropdown-content {
+  margin-top: -1px; }
 
-  .main-nav ul li a {
-    display: block;
-    padding-top: 15px; } }
 @media only screen and (min-width: 600px) {
   .projecten, .cvee {
     position: relative; }
 
   .dropdown-content {
-    display: none;
-    position: absolute;
-    margin-top: -1px; }
+    display: none; }
 
-  .dropdown-content a {
-    display: block; }
-
-  .projecten:hover .dropdown-content, .cvee:hover .dropdown-content {
+  .projecten:hover .dropdown-content,
+  .cvee:hover .dropdown-content {
     display: block; } }
 .main-footer div,
+.main-footer ul,
 .main-footer ul li,
 .main-footer ul li a {
   padding: 0px; }
-
-.main-footer ul {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px; }
 
 .main-footer ul {
   height: 60px; }
 
 .main-footer ul li,
 .main-footer ul li a {
-  height: 100%;
-  width: 100%; }
+  height: 100%; }
 
 .main-footer ul li a {
-  display: block;
   padding-top: 15px; }
 
 .main-nav li,
@@ -189,10 +175,6 @@ footer ul li a {
   text-decoration: none;
   cursor: pointer;
   text-align: center; }
-
-main {
-  position: relative;
-  padding-left: 15px; }
 
 html {
   font-family: "Lucida Sans", sans-serif;
