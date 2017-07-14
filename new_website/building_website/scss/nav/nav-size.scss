@@ -1,7 +1,5 @@
 // sets the height of nav elements
 .logo,
-.main-nav li,
-.main-nav li,
 .main-nav li a {
     height: 50px;
 }
@@ -13,8 +11,12 @@
 }
 
 @media only screen and (min-width: 600px) {
+    // sets the main-nav to auto
+    .main-nav li div a {
+        height: auto;
+    }
 
-    //makes sure the logo stands beside the navigation bar
+    // makes sure the logo stands beside the navigation bar
     .main-nav {
         padding-left: 50px;
         margin-left: -50px;

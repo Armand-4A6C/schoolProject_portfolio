@@ -104,12 +104,11 @@
   border: solid red 1px; }
 
 .logo {
-  background-image: url(http://via.placeholder.com/60x60);
+  background-image: url(http://via.placeholder.com/80x80);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
-  margin-top: 0px; }
+  width: 100%; }
 
 @media only screen and (min-width: 600px) {
   .logo {
@@ -145,8 +144,6 @@ ul {
     position: absolute;
     border: 1px solid black; } }
 .logo,
-.main-nav li,
-.main-nav li,
 .main-nav li a {
   height: 50px; }
 
@@ -155,6 +152,9 @@ ul {
   padding: 15px; }
 
 @media only screen and (min-width: 600px) {
+  .main-nav li div a {
+    height: auto; }
+
   .main-nav {
     padding-left: 50px;
     margin-left: -50px; }
