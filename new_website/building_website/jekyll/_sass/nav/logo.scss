@@ -1,0 +1,15 @@
+// sets the properties of the logo
+.logo {
+    background-image:url(http://via.placeholder.com/80x80);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+// makes sure that the navigation looks as 1 thing
+@media only screen and (min-width: 600px) {
+    .logo {
+        float: left;
+    }
+}

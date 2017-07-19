@@ -1,0 +1,23 @@
+//disable all the grids padding inside the footer
+.main-footer div,
+.main-footer ul,
+.main-footer ul li,
+.main-footer ul li a {
+    padding: 0px;
+}
+
+// sets the height of the footer
+.main-footer ul {
+    height: 40px;
+}
+
+// inherite the height trough all layers of the footer
+.main-footer ul li,
+.main-footer ul li a {
+    height: 100%;
+}
+
+// centers the text in the footer
+.main-footer ul li a {
+    padding-top: 10px;
+}
