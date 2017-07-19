@@ -1,0 +1,322 @@
+/*
+ =======================================================================
+ The whole project is build with sass for clear descriptions look there
+ =======================================================================
+*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+* {
+  box-sizing: border-box; }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%; }
+
+.hid-no-desk {
+  display: none; }
+
+@media only screen and (min-width: 600px) {
+  .col-m-1 {
+    width: 8.33%; }
+
+  .col-m-2 {
+    width: 16.66%; }
+
+  .col-m-3 {
+    width: 25%; }
+
+  .col-m-4 {
+    width: 33.33%; }
+
+  .col-m-5 {
+    width: 41.66%; }
+
+  .col-m-6 {
+    width: 50%; }
+
+  .col-m-7 {
+    width: 58.33%; }
+
+  .col-m-8 {
+    width: 66.66%; }
+
+  .col-m-9 {
+    width: 75%; }
+
+  .col-m-10 {
+    width: 83.33%; }
+
+  .col-m-11 {
+    width: 91.66%; }
+
+  .col-m-12 {
+    width: 100%; } }
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    width: 8.33%; }
+
+  .col-2 {
+    width: 16.66%; }
+
+  .col-3 {
+    width: 25%; }
+
+  .col-4 {
+    width: 33.33%; }
+
+  .col-5 {
+    width: 41.66%; }
+
+  .col-6 {
+    width: 50%; }
+
+  .col-7 {
+    width: 58.33%; }
+
+  .col-8 {
+    width: 66.66%; }
+
+  .col-9 {
+    width: 75%; }
+
+  .col-10 {
+    width: 83.33%; }
+
+  .col-11 {
+    width: 91.66%; }
+
+  .col-12 {
+    width: 100%; }
+
+  .hid-no-desk {
+    display: block;
+    height: 30px;
+    width: 8.33%;
+    float: left; } }
+[class*="col-"] {
+  border: solid green 1px; }
+
+.hid-no-desk {
+  border: solid red 1px; }
+
+.logo {
+  background-image: url(http://via.placeholder.com/80x80);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%; }
+
+@media only screen and (min-width: 600px) {
+  .logo {
+    float: left; } }
+.main-nav {
+  margin-top: 0px; }
+
+.main-nav,
+.main-nav > .dropdown-nav,
+.main-nav li {
+  padding: 0px; }
+
+ul {
+  list-style-type: none; }
+
+.hid-if-mob {
+  display: none; }
+
+@media only screen and (min-width: 600px) {
+  .hid-if-mob {
+    display: block; } }
+@media only screen and (min-width: 600px) {
+  .projecten,
+  .cvee {
+    position: relative; }
+
+  .dropdown-content {
+    position: absolute;
+    visibility: hidden;
+    margin-top: -1px; }
+
+  .dropdown-content a {
+    display: block; }
+
+  .projecten:hover .dropdown-content,
+  .projecten a:focus + .dropdown-content,
+  .cvee:hover .dropdown-content,
+  .cvee a:focus + .dropdown-content,
+  .dropdown-content a:focus,
+  .dropdown-content a:focus ~ a {
+    visibility: visible;
+    border: 1px solid black; } }
+.logo,
+.main-nav li a {
+  height: 50px; }
+
+.main-nav li a,
+.dropdown-content a {
+  padding: 15px; }
+
+@media only screen and (min-width: 600px) {
+  .main-nav li div a {
+    height: auto; }
+
+  .main-nav {
+    padding-left: 50px;
+    margin-left: -50px; }
+
+  .logo {
+    width: 50px; } }
+.main-footer div,
+.main-footer ul,
+.main-footer ul li,
+.main-footer ul li a {
+  padding: 0px; }
+
+.main-footer ul {
+  height: 40px; }
+
+.main-footer ul li,
+.main-footer ul li a {
+  height: 100%; }
+
+.main-footer ul li a {
+  padding-top: 10px; }
+
+.main-nav li,
+.main-nav li a,
+.dropdown-content a,
+footer ul li,
+footer ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px; }
+
+* {
+  font-size: 16px; }
+
+h1 {
+  text-align: center;
+  font-size: 22px; }
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    text-align: left;
+    margin-left: 15px; } }
+html {
+  font-family: "Lucida Sans", sans-serif;
+  display: block;
+  background: radial-gradient(#155, #000);
+  z-index: 0;
+  background-attachment: fixed; }
+
+.universe1 {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-image: url(../images/star_skyL1.png);
+  background-size: cover;
+  -webkit-animation: flash ease-in-out 7.5s infinite;
+  animation: flash ease-in-out 7.5s infinite;
+  z-index: -3;
+  background-attachment: fixed; }
+
+.universe2 {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-image: url(../images/star_skyL2.png);
+  background-size: cover;
+  -webkit-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+  -webkit-animation: flash ease-in-out 5s infinite;
+  animation: flash ease-in-out 5s infinite;
+  z-index: -2;
+  background-attachment: fixed; }
+
+.universe3 {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-image: url(../images/star_skyL3.png);
+  background-size: cover;
+  -webkit-animation-delay: 1.85s;
+  animation-delay: 1.85s;
+  -webkit-animation: flash ease-in-out 3.75s infinite;
+  animation: flash ease-in-out 3.75s infinite;
+  z-index: -1;
+  background-attachment: fixed; }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.95; }
+  25% {
+    opacity: 0.7; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.7; }
+  100% {
+    opacity: 0.95; } }
+@keyframes flash {
+  0% {
+    opacity: 0.95; }
+  25% {
+    opacity: 0.7; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.7; }
+  100% {
+    opacity: 0.95; } }
+.main {
+  border: solid grey 1px;
+  border-radius: 2%;
+  background: rgba(90, 90, 90, 0.6); }
+
+.third-layer {
+  background-color: white;
+  box-shadow: black 3px 3px 8px 1px;
+  border-radius: 4%;
+  border: grey solid 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px; }
+
+.fourth-layer-extra,
+ul li a,
+.logo {
+  text-shadow: 3px 2px 2px black;
+  box-shadow: 3px 3px 8px 1px black; }
+
+.logo {
+  border: solid black 1px; }
+
+.fourth-layer,
+.main-nav li a,
+footer li a,
+.video {
+  background: linear-gradient(black, grey, black);
+  color: azure;
+  border: solid black 1px; }
+
+.fourth-layer:hover,
+.main-nav li a:hover,
+footer li a:hover,
+.video:hover,
+.fourth-layer:focus,
+.main-nav li a:focus,
+footer li a:focus,
+.video:focus {
+  background: linear-gradient(black, white, black); }
+
+/*# sourceMappingURL=main.css.map */
