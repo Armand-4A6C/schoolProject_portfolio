@@ -1,0 +1,36 @@
+<!--Auteur Armand van Alphen-->
+<!DOCTYPE html>
+<html lang=nl>
+	<head>
+		<link rel=stylesheet href=butter_cheese_and_eggs_style.css>
+		<meta charset="utf-8">
+		<title>butter cheese and eggs</title>
+	</head>
+	<body>
+		<div class=display id=display></div>
+		<div class="buttonwindow">
+			<button onclick="setpmode(0)" class=button>1 playermode</button>
+			<button onclick="setpmode(1)" class=button>2 playermode</button>
+		</div>
+		<br><br><br>
+		<div class=ninegrid>
+			<div class=row>
+				<button onclick="block(1)"id=block_one class=box></button>
+				<button onclick="block(2)"id=block_two class=box></button>
+				<button onclick="block(3)"id=block_three class=box></button>
+			</div>
+			<div class=row>
+				<button onclick="block(4)"id=block_four class=box></button>
+				<button onclick="block(5)"id=block_five class=box></button>
+				<button onclick="block(6)"id=block_six class=box></button>
+			</div>
+			<div class=row>
+				<button onclick="block(7)"id=block_seven class=box></button>
+				<button onclick="block(8)"id=block_eight class=box></button>
+				<button onclick="block(9)"id=block_nine class=box></button>
+			</div>
+		</div>
+		<button onclick=closesolution() class="button buttontwo">Solution switch</button>
+		<script src="butter_cheese_and_eggs_javascript.js"></script>
+	</body>
+</html>
