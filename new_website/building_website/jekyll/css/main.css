@@ -104,7 +104,7 @@
   border: solid red 1px; }
 
 .logo {
-  background-image: url(http://via.placeholder.com/80x80);
+  background-image: url(../images/logo/logo.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
