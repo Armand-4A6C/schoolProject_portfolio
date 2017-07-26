@@ -2,25 +2,25 @@
 <html>
   {% include head.html %}
 
-  <body>
-    <!--background elements -->
-    {% include background.html %}
+<body>
+<!--background elements -->
+{% include background.html %}
 
-    <!--nav -->
-    {% include nav.html %}
+<!--nav -->
+{% include nav.html %}
 
-    <!--main -->
-    <main class="row">
-        <div class="hid-no-desk"></div>
-        <div class="col-10 col-m-12 main">
+<!--main -->
+<main class="row">
+    <div class="hid-no-desk"></div>
+    <div class="col-10 col-m-12">
         {{ content }}
-        </div>
-        <div class="hid-no-desk"></div>
-    </main>
+    </div>
+    <div class="hid-no-desk"></div>
+</main>
 
-    <!--footer -->
-    {% include footer.html %}
+<!--footer -->
+{% include footer.html %}
 
-  </body>
+</body>
 
 </html>
