@@ -2,9 +2,12 @@
     font-size: 16px;
 }
 
+//H1
 h1 {
+    color: limegreen;
+    text-shadow: 2px 2px 0px green;
     text-align: center;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -12,4 +15,18 @@ h1 {
         text-align: left;
         margin-left: 15px;
     }
+}
+
+//H2
+h2 {
+    color: lime;
+    text-align: center;
+    font-size: 24px;
+}
+
+//H#
+h3 {
+    color: darkgreen;
+    text-align: center;
+    font-size: 18px;
 }
