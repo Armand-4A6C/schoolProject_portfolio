@@ -1,4 +1,4 @@
-@ECHO off
+@ECHO on
 
 ECHO cd to map location
 	CD ../jekyll
@@ -19,5 +19,6 @@ ECHO start github console
 	CD C:\Users\gebruiker\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\GitHub, Inc
 	START github.appref-ms
 
+TIMEOUT 60
 PAUSE
 
