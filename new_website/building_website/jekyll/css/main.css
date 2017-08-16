@@ -190,9 +190,20 @@ ul {
 .dropdown-content a,
 footer ul li,
 footer ul li a {
-  text-decoration: none;
   cursor: pointer;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
+
+ul {
+  padding: 0px; }
+
+ul li {
+  margin: 15px 0px; }
+
+#overmij-wat_kan_ik ul {
+  margin-top: 40px;
+  list-style-type: disc;
+  list-style-position: inside; }
 
 html, body {
   height: 100%;
@@ -310,7 +321,18 @@ html {
   box-shadow: black 3px 3px 8px 1px;
   border-radius: 10px;
   border: grey solid 1px;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  display: table;
+  padding: 5px 60px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%; }
+
+.third-layer-t p {
+  text-align: center; }
+
+.third-layer-t h1 {
+  text-align: center; }
 
 .fourth-layer-extra,
 ul li a,
