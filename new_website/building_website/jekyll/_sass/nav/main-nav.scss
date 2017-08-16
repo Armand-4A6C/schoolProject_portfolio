@@ -1,12 +1,14 @@
-// sticks the main navigation to the top
+// sticks the main navigation to the top and removes unnessecary margin to the bottom
 .main-nav {
-    margin-top: 0px;
+    margin: 0px;
 }
 
 // removes unnecessary padding inherited from the grid
+nav,
 .main-nav,
-.main-nav > .dropdown-nav,
-.main-nav li {
+.main-nav li,
+.main-nav > .dropdown-nav
+{
     padding: 0px;
 }
 
@@ -19,6 +21,8 @@ ul {
 .hid-if-mob {
     display: none;
 }
+
+
 
 // tablet and desktop view
 @media only screen and (min-width: 600px) {
