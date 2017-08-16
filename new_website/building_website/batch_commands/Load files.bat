@@ -1,4 +1,4 @@
-@ECHO on
+@ECHO off
 
 ECHO cd to map location
 	CD ../jekyll
