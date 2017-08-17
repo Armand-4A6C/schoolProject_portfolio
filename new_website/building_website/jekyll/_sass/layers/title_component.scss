@@ -2,36 +2,51 @@
 // Title/Intro styling
 // ===========================
 
+.title-wrap {
+	padding: 0px 15px;
+	margin: 15px 0px 0px 0px;
+}
+
 .title-head {
 	box-shadow: black 3px 3px 8px 1px;
 	border-radius:20px;
 	border: grey solid 1px;
 	background-color: rgba(200, 200, 200, 0.8);
 	display: table;
-	padding: 30px 30px 0px 30px;
-	margin: 15px 0px 0px 0px;
-}
-
-.title-wrap {
-	padding: 0px 45px 0px 15px;
+	padding: 10px 15px 20px 15px;
 	margin: 0px;
 }
 
+// title tag
+.title-head h1 {
+    text-align: center;
+	padding: 5px;
+	margin: 5px 0px;
+}
+
+// paragraph styles
 .title-head p {
-	margin: 18px 0px;
-	padding: 5px 0px 5px 0px;
+	text-align: left;
+	margin: 7px 0px 0px 0px;
+	padding: 5px 10px;
 	width: 100%;
 }
 
+// Paragraph link styles
 .title-head p strong a {
 	color: black;
 	cursor: pointer;
 	padding: 0px;
 }
 
-//title tag
-.title-head h1 {
-    text-align: left;
-	padding: 0px;
-	margin: 0px;
+@media(min-width: 600px) {
+	.title-wrap {
+		padding: 0px 15px;
+		margin: 0px;
+	}
+
+	.title-head p {
+		width: 50%;
+		float:left;
+	}
 }
