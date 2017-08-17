@@ -1,5 +1,5 @@
 // ===========================
-// Color styling thirdLayer
+// Title/Intro styling
 // ===========================
 
 .title-head {
@@ -30,11 +30,8 @@
 }
 
 //title tag
-h1 {
-    color: limegreen;
-    text-shadow: 2px 2px 0px green;
+.title-head h1 {
     text-align: left;
-    font-size: 28px;
 	padding: 0px;
 	margin: 0px;
 }
