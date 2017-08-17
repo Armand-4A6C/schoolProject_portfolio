@@ -1,0 +1,40 @@
+// ===========================
+// Color styling thirdLayer
+// ===========================
+
+.title-head {
+	box-shadow: black 3px 3px 8px 1px;
+	border-radius:20px;
+	border: grey solid 1px;
+	background-color: rgba(200, 200, 200, 0.8);
+	display: table;
+	padding: 30px 30px 0px 30px;
+	margin: 15px 0px 0px 0px;
+}
+
+.title-wrap {
+	padding: 0px 45px 0px 15px;
+	margin: 0px;
+}
+
+.title-p {
+	margin: 18px 0px;
+	padding: 5px 0px 5px 0px;
+	width: 100%;
+}
+
+.title-p strong a {
+	color: black;
+	cursor: pointer;
+	padding: 0px;
+}
+
+//title tag
+h1 {
+    color: limegreen;
+    text-shadow: 2px 2px 0px green;
+    text-align: left;
+    font-size: 28px;
+	padding: 0px;
+	margin: 0px;
+}
