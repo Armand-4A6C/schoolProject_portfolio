@@ -19,8 +19,7 @@
 // sets the standards for every class with col- inside of it :
 [class*="col-"] {
     float: left;
-    padding: 15px;
-    
+
     // sets the standard width for mobile version
     width: 100%;
 }
