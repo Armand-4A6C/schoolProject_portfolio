@@ -6,17 +6,18 @@
 	padding: 15px 15px;
 }
 
+// title container styles
 .title-head {
 	box-shadow: black 3px 3px 8px 1px;
 	border-radius:20px;
 	border: grey solid 1px;
-	background-color: rgba(200, 200, 200, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
 	display: table;
 	padding: 10px 15px 20px 15px;
 	margin: 15px 0px 0px 0px;
 }
 
-// title tag
+// title head styles
 .title-head h1 {
     text-align: center;
 	padding: 5px;
@@ -24,15 +25,15 @@
 }
 
 // paragraph styles
-.title-head p {
+.title-p-wrap p  {
 	text-align: left;
 	margin: 7px 0px 0px 0px;
 	padding: 5px 10px;
 	width: 100%;
 }
 
-// Paragraph link styles
-.title-head p strong a {
+// paragraph link styles
+.title-p-wrap p strong a {
 	color: black;
 	cursor: pointer;
 	padding: 0px;
