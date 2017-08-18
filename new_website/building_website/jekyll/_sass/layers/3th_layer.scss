@@ -32,3 +32,24 @@
 	padding: 0px;
 	margin-top: 0px;
 }
+// =========================
+// Project no vid styles
+// =========================
+
+// lets the image fill the content balloon
+.project_nv img {
+	max-width: 100%;
+	margin: 0px 0px;
+}
+
+.project_nv {
+	padding:10px;
+}
+
+.project_nv p {
+	margin: 0px 5px;
+}
+
+.project_nv h3 {
+	margin: 0px 5px;
+}
