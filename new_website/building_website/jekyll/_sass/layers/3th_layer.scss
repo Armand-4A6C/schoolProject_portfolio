@@ -2,6 +2,14 @@
 // Color styling thirdLayer
 // ===========================
 
+.third-layer-wrap {
+	padding: 0px 15px;
+}
+
+.video-wrap {
+	padding: 15px;
+}
+
 //sets the style for the third layer
 .third-layer {
 	box-shadow: black 3px 3px 8px 1px;
@@ -32,6 +40,12 @@
 	padding: 0px;
 	margin-top: 0px;
 }
+
+.third-layer a:hover {
+	color: #000;
+	text-shadow: 1px 1px 1px #080;
+}
+
 // =========================
 // Project no vid styles
 // =========================

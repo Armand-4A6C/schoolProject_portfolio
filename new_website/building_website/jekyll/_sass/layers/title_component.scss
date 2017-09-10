@@ -39,10 +39,16 @@
 	padding: 0px;
 }
 
+.title-p-wrap p strong a:hover {
+	color: #000;
+	text-shadow: 1px 1px 1px #080;
+}
+
 @media(min-width: 600px) {
 	.title-wrap {
 		padding: 0px 15px;
 		margin: 0px;
+		text-decoration: none;
 	}
 
 	.title-head p {
