@@ -43,7 +43,7 @@
 }
 
 // sets the background and tekst color for the 4th layer
-.fourth-layer,
+.project-video--side,
 .main-nav li a,
 footer li a,
 .video {
@@ -53,12 +53,12 @@ footer li a,
 }
 
 // sets the hover background color for the 4th layer
-.fourth-layer:hover,
+.project-video--side:hover,
 .main-nav li a:hover,
 footer li a:hover,
 .video:hover,
 
-.fourth-layer:focus,
+.project-video--side:focus,
 .main-nav li a:focus,
 footer li a:focus,
 .video:focus {
@@ -72,7 +72,7 @@ footer li a:focus,
 	margin: 0px;
 }
 
-.fourth-layer {
+.project-video--side {
 	margin-top: 15px;
 	background-color: none;
 	padding: 16px;
@@ -83,23 +83,27 @@ footer li a:focus,
 }
 
 @media(min-width:600px)  {
-	.fourth-layer {
+	.project-video--side {
 		width: 100%;
 		float:none;
 		min-height: 0px;
 	}
 }
 
-.fourth-layer h2 {
+.project-video--side h2 {
 	font-size: 15px;
 	text-align: left;
 	padding: 0px;
 	margin: 0px 0px 4px 0px;
 }
 
-.fourth-layer img {
+.project-video--side img {
 	width: 100%;
 	height: 100%;
 	border: solid 1px #111;
 	padding: 0px;
+}
+
+.video-button {
+	cursor: pointer;
 }
