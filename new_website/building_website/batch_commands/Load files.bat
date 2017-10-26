@@ -17,7 +17,7 @@ ECHO open the project in browser
 
 ECHO start github console
 	CD C:\Users\gebruiker\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\GitHub, Inc
-	START github.appref-ms
+	github
 
 TIMEOUT 60
 PAUSE
