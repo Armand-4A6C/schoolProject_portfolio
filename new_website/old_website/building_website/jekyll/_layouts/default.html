@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+<body>
+<!--background elements -->
+{% include background.html %}
+
+<!--nav -->
+{% include nav.html %}
+
+<!--main -->
+<div class="row">
+    <div class="hid-no-desk"></div>
+    <div class="col-10 col-m-12 main">
+        {{ content }}
+    </div>
+    <div class="hid-no-desk"></div>
+</div>
+
+<!--footer -->
+{% include footer.html %}
+
+</body>
+
+</html>

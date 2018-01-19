@@ -182,34 +182,6 @@ ul {
   .main-nav {
     padding-left: 50px;
     margin-left: -50px; } }
-.footer {
-  position: sticky;
-  top: calc(100vh - 40px); }
-
-.main-footer div,
-.main-footer ul,
-.main-footer ul li,
-.main-footer ul li a {
-  padding: 0px;
-  margin: 0px; }
-
-.main-footer ul {
-  height: 40px; }
-
-.main-footer ul li,
-.main-footer ul li a {
-  height: 100%; }
-
-.main-footer ul li a {
-  padding-top: 10px;
-  border-left: 1px solid black;
-  border-right: 1px solid black; }
-
-.main-footer ul,
-.main-footer ul li {
-  padding-top: 0px;
-  margin-top: 0px; }
-
 .main-nav li,
 .main-nav li a,
 .dropdown-content a,
@@ -263,72 +235,8 @@ h3 a {
 html {
   font-family: "Lucida Sans", sans-serif;
   display: block;
-  background: radial-gradient(#252 -60%, #020 50%, #000);
-  z-index: 0;
-  background-attachment: fixed; }
+  z-index: 0; }
 
-.universe1 {
-  margin: 0px;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  background-image: url(../images/achtergrond/star_skyL1.png);
-  background-size: cover;
-  -webkit-animation: flash ease-in-out 7.5s infinite;
-  animation: flash ease-in-out 7.5s infinite;
-  z-index: -3;
-  background-attachment: fixed; }
-
-.universe2 {
-  margin: 0px;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  background-image: url(../images/achtergrond/star_skyL2.png);
-  background-size: cover;
-  -webkit-animation-delay: 1.25s;
-  animation-delay: 1.25s;
-  -webkit-animation: flash ease-in-out 5s infinite;
-  animation: flash ease-in-out 5s infinite;
-  z-index: -2;
-  background-attachment: fixed; }
-
-.universe3 {
-  margin: 0px;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  background-image: url(../images/achtergrond/star_skyL3.png);
-  background-size: cover;
-  -webkit-animation-delay: 1.85s;
-  animation-delay: 1.85s;
-  -webkit-animation: flash ease-in-out 3.75s infinite;
-  animation: flash ease-in-out 3.75s infinite;
-  z-index: -1;
-  background-attachment: fixed; }
-
-@-webkit-keyframes flash {
-  0% {
-    opacity: 0.95; }
-  25% {
-    opacity: 0.7; }
-  50% {
-    opacity: 0.5; }
-  75% {
-    opacity: 0.7; }
-  100% {
-    opacity: 0.95; } }
-@keyframes flash {
-  0% {
-    opacity: 0.95; }
-  25% {
-    opacity: 0.7; }
-  50% {
-    opacity: 0.5; }
-  75% {
-    opacity: 0.7; }
-  100% {
-    opacity: 0.95; } }
 .title-wrap {
   padding: 15px 15px; }
 

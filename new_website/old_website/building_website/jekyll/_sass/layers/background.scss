@@ -1,0 +1,72 @@
+// sets the 1st background layer
+html {
+	font-family: "Lucida Sans", sans-serif;
+	display: block;
+	background: radial-gradient(#252 -60%, #020 50%, #000);
+	z-index: 0;
+    background-attachment: fixed;
+}
+
+// 2nd background layer
+.universe1 {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-image: url(../images/achtergrond/star_skyL1.png);
+	background-size: cover;
+	-webkit-animation: flash ease-in-out 7.5s infinite;
+	animation: flash ease-in-out 7.5s infinite;
+	z-index: -3;
+    background-attachment: fixed;
+}
+
+// 3th background layer
+.universe2 {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-image: url(../images/achtergrond/star_skyL2.png);
+	background-size:cover;
+	-webkit-animation-delay: 1.25s;
+    animation-delay: 1.25s;
+	-webkit-animation: flash ease-in-out 5s infinite;
+	animation: flash ease-in-out 5s infinite;
+	z-index: -2;
+    background-attachment: fixed;
+}
+
+// 4th background layer
+.universe3 {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-image: url(../images/achtergrond/star_skyL3.png);
+	background-size: cover;
+	-webkit-animation-delay: 1.85s;
+    animation-delay: 1.85s;
+	-webkit-animation: flash ease-in-out 3.75s infinite;
+	animation: flash ease-in-out 3.75s infinite;
+	z-index: -1;
+    background-attachment: fixed;
+}
+
+// animation for webkit based browsers
+@-webkit-keyframes flash {
+	0% { opacity: 0.95;}
+	25% { opacity: 0.7;}
+	50% { opacity: 0.5;}
+	75% { opacity: 0.7;}
+	100% { opacity: 0.95;}
+}
+
+// animation for most browsers
+@keyframes flash {
+	0% { opacity: 0.95;}
+	25% { opacity: 0.7;}
+	50% { opacity: 0.5;}
+	75% { opacity: 0.7;}
+	100% { opacity: 0.95;}
+}

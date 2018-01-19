@@ -1,0 +1,70 @@
+/*
+ =======================================================================
+ The whole project is build with sass for clear descriptions look there
+ =======================================================================
+*/
+
+// makes sure you'll get rows underneath eachother:
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+// makes padding part of element height and with for all elements
+* {
+    box-sizing: border-box;
+}
+
+// sets the standards for every class with col- inside of it :
+[class*="col-"] {
+    float: left;
+
+    // sets the standard width for mobile version
+    width: 100%;
+}
+
+//removes the desktop alignng blocks
+.hid-no-desk {
+    display:none;
+}
+
+// For tablets:
+@media only screen and (min-width: 600px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+// For desktop:
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    // aligning blocks for desktop view
+    .hid-no-desk {
+        display:block;
+        height: 30px;
+        width: 8.33%;
+        float:left;
+    }
+}

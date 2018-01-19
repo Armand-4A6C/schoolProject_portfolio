@@ -1,0 +1,24 @@
+// sets the text layout of the navigation and the footer
+.main-nav li,
+.main-nav li a,
+.dropdown-content a,
+footer ul li,
+footer ul li a    {
+	cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+}
+
+ul li {
+    margin: 15px 0px;
+}
+
+#overmij-wat_kan_ik ul {
+    margin-top: 40px;
+    list-style-type: disc;
+    list-style-position: inside;
+}

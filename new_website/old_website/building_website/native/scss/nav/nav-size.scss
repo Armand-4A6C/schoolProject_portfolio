@@ -1,0 +1,28 @@
+// sets the height of nav elements
+.logo,
+.main-nav li a {
+    height: 50px;
+}
+
+// centers vertical aligns text inside the navigation
+.main-nav li a,
+.dropdown-content a {
+    padding: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    // sets the main-nav to auto
+    .main-nav li div a {
+        height: auto;
+    }
+
+    // makes sure the logo stands beside the navigation bar
+    .main-nav {
+        padding-left: 50px;
+        margin-left: -50px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+}
