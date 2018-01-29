@@ -182,6 +182,16 @@ ul {
   .main-nav {
     padding-left: 50px;
     margin-left: -50px; } }
+.footer {
+  height: 30px;
+  background-color: lime;
+  position: relative;
+  top: 30px; }
+
+.centered-footer {
+  padding-left: 5%;
+  padding-right: 5%; }
+
 .main-nav li,
 .main-nav li a,
 .dropdown-content a,
