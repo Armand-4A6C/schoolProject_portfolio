@@ -183,20 +183,59 @@ ul {
     padding-left: 50px;
     margin-left: -50px; } }
 .footer {
-  height: 30px;
-  background-color: lime;
   position: relative;
   top: 30px; }
 
-.centered-footer {
-  padding-left: 5%;
-  padding-right: 5%; }
+.upper-footer {
+  background-color: #70CF1B;
+  padding: 0 5%;
+  margin-bottom: 0px; }
+
+.lower-footer {
+  margin-top: 0px;
+  background-color: #264B05;
+  padding: 15px 5%; }
+
+.footer-h5 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 17px; }
+
+.footer-box {
+  padding: 10px;
+  height: 100%; }
+
+.footer-middle-box {
+  border-left: solid black 1px;
+  border-right: solid black 1px; }
+
+.footer-visie {
+  padding: 0 20px; }
+
+.footer-linkbox {
+  padding-top: 10px; }
+
+.footer-link {
+  text-align: center;
+  text-decoration: none;
+  margin: 0px; }
+
+.footer-link a {
+  padding: 3px;
+  cursor: pointer;
+  text-decoration: none; }
+
+.footer-link:hover a {
+  color: #933; }
+
+.lower-footer,
+.footer-link a,
+.footer-visie {
+  color: azure; }
 
 .main-nav li,
 .main-nav li a,
-.dropdown-content a,
-footer ul li,
-footer ul li a {
+.dropdown-content a {
   cursor: pointer;
   text-align: center;
   text-decoration: none; }
@@ -216,6 +255,10 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0px; }
+
+footer, main, header {
+  margin-left: 0px;
+  margin-right: 0px; }
 
 * {
   font-size: 1rem; }
@@ -373,7 +416,6 @@ html {
 
 .project-video--side,
 .main-nav li a,
-footer li a,
 .video {
   background: linear-gradient(black -5%, grey, black 105%);
   color: azure;
@@ -381,11 +423,9 @@ footer li a,
 
 .project-video--side:hover,
 .main-nav li a:hover,
-footer li a:hover,
 .video:hover,
 .project-video--side:focus,
 .main-nav li a:focus,
-footer li a:focus,
 .video:focus {
   background: linear-gradient(black -5%, grey 30%, white, grey 70%, black 105%); }
 

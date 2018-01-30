@@ -1,9 +1,7 @@
 // sets the text layout of the navigation and the footer
 .main-nav li,
 .main-nav li a,
-.dropdown-content a,
-footer ul li,
-footer ul li a    {
+.dropdown-content a {
 	cursor: pointer;
     text-align: center;
     text-decoration: none;
