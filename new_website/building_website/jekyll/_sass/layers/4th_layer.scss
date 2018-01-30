@@ -1,37 +1,6 @@
 // ========================
 // 4th layer colors
 // ========================
-
-// project video styles
-#project-video iframe {
-	padding: 5px;
-	margin: 0px;
-	border-radius: 10px;
-	width: 100%;
-	height: 50vw;
-	margin: 0px;
-}
-
-@media only screen and (min-width: 600px) {
-	#project-video iframe {
-		height: 30vw;
-	}
-}
-
-
-#project-video {
-	padding: 15px 15px 0px 15px;
-	margin: 0px;
-}
-
-// video beschrijving
-#video-beschrijving {
-	padding: 15px 5% 0px 5%;
-	margin: 0px;
-	height: 200px;
-	width: 100%;
-}
-
 .vwrap {
 	padding: 0px;
 	margin: 0px;
@@ -49,63 +18,10 @@
 	border: solid black 1px;
 }
 
-// sets the background and tekst color for the 4th layer
-.project-video--side,
-.main-nav li a,
-.video {
-	background: linear-gradient(black -5%, grey, black 105%);
-	color: azure;
-	border: solid black 1px;
-}
-
 // sets the hover background color for the 4th layer
-.project-video--side:hover,
-.video:hover,
-
-.project-video--side:focus,
-.video:focus {
-	background: linear-gradient(black -5%, grey 30%, white, grey 70%, black 105%);
-}
-
 .fourth-layer-wrap {
 	margin-top: 30px;
 	background-color: none;
 	padding: 0px 15px 0px 0px;
 	margin: 0px;
-}
-
-.project-video--side {
-	margin-top: 15px;
-	background-color: none;
-	padding: 16px;
-	width: 50%;
-	float:left;
-	border: solid rgb(1,1,1) 2px;
-	min-height: 380px;
-}
-
-@media(min-width:600px)  {
-	.project-video--side {
-		width: 100%;
-		float:none;
-		min-height: 0px;
-	}
-}
-
-.project-video--side h2 {
-	font-size: 15px;
-	text-align: left;
-	padding: 0px;
-	margin: 0px 0px 4px 0px;
-}
-
-.project-video--side img {
-	width: 100%;
-	height: 100%;
-	border: solid 1px #111;
-	padding: 0px;
-}
-
-.video-button {
-	cursor: pointer;
 }

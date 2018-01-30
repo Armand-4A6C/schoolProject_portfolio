@@ -8,6 +8,12 @@
 	background: linear-gradient(black -5%, grey 30%, white, grey 70%, black 105%);
 }
 
+.main-nav li a {
+	background: linear-gradient(black -5%, grey, black 105%);
+	color: azure;
+	border: solid black 1px;
+}
+
 // removes unnecessary padding inherited from the grid
 nav,
 .main-nav,
