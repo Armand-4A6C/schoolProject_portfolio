@@ -16,8 +16,8 @@ ECHO open the project in browser
 	START http://127.0.0.1:4000/
 
 ECHO start github console
-	CD C:\Users\gebruiker\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\GitHub, Inc
-	github
+	ECHO CD C:\Users\gebruiker\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\GitHub, Inc
+	ECHO github
 
 TIMEOUT 60
 PAUSE
