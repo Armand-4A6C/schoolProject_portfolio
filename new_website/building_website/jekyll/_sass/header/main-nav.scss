@@ -3,6 +3,11 @@
     margin: 0px;
 }
 
+.main-nav li a:hover,
+.main-nav li a:focus {
+	background: linear-gradient(black -5%, grey 30%, white, grey 70%, black 105%);
+}
+
 // removes unnecessary padding inherited from the grid
 nav,
 .main-nav,

@@ -60,11 +60,9 @@
 
 // sets the hover background color for the 4th layer
 .project-video--side:hover,
-.main-nav li a:hover,
 .video:hover,
 
 .project-video--side:focus,
-.main-nav li a:focus,
 .video:focus {
 	background: linear-gradient(black -5%, grey 30%, white, grey 70%, black 105%);
 }

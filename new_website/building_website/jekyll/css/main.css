@@ -116,6 +116,10 @@
 .main-nav {
   margin: 0px; }
 
+.main-nav li a:hover,
+.main-nav li a:focus {
+  background: linear-gradient(black -5%, grey 30%, white, grey 70%, black 105%); }
+
 nav,
 .main-nav,
 .main-nav li,
@@ -294,7 +298,6 @@ html {
   padding: 15px 15px; }
 
 .title-head {
-  box-shadow: black 3px 3px 8px 1px;
   border-radius: 20px;
   border: grey solid 1px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -338,7 +341,6 @@ html {
   padding: 15px; }
 
 .third-layer {
-  box-shadow: black 3px 3px 8px 1px;
   border-radius: 20px;
   border: grey solid 1px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -422,10 +424,8 @@ html {
   border: solid black 1px; }
 
 .project-video--side:hover,
-.main-nav li a:hover,
 .video:hover,
 .project-video--side:focus,
-.main-nav li a:focus,
 .video:focus {
   background: linear-gradient(black -5%, grey 30%, white, grey 70%, black 105%); }
 
