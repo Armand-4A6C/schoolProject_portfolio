@@ -17,9 +17,15 @@
 }
 
 .footer-h5 {
+    color: $darkgreen;
+    text-shadow:
+        1px 1px 0px #121,
+        1px 1px 1px #121;
+
     text-align: center;
     margin-bottom: 5px;
     font-size: 17px;
+    // font-weight: 900;
 }
 
 .footer-box {
@@ -52,6 +58,11 @@
     cursor: pointer;
     text-decoration: none;
 }
+.footer-link a,
+.footer-visie {
+    text-shadow: 1px 1px 0px $darkgreen;
+}
+
 
 .footer-link:hover a {
     color: #933;

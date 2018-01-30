@@ -118,10 +118,10 @@
 
 .main-nav li a:hover,
 .main-nav li a:focus {
-  background: linear-gradient(black -5%, grey 30%, white, grey 70%, black 105%); }
+  background: linear-gradient(#264B05 -10%, #50b015, #264B05 110%); }
 
 .main-nav li a {
-  background: linear-gradient(black -5%, grey, black 105%);
+  background: linear-gradient(#264B05 -40%, #70CF1B, #264B05 140%);
   color: azure;
   border: solid black 1px; }
 
@@ -142,7 +142,7 @@ ul {
     display: block; } }
 .main-nav li a,
 .logo {
-  text-shadow: 3px 2px 2px black; }
+  text-shadow: 1px 1px 0px #264B05, 2px 2px 1px #264B05; }
 
 @media only screen and (min-width: 600px) {
   .projecten,
@@ -210,6 +210,8 @@ ul {
   padding: 15px 5%; }
 
 .footer-h5 {
+  color: #264B05;
+  text-shadow: 1px 1px 0px #121, 1px 1px 1px #121;
   text-align: center;
   margin-bottom: 5px;
   font-size: 17px; }
@@ -237,6 +239,10 @@ ul {
   padding: 3px;
   cursor: pointer;
   text-decoration: none; }
+
+.footer-link a,
+.footer-visie {
+  text-shadow: 1px 1px 0px #264B05; }
 
 .footer-link:hover a {
   color: #933; }
@@ -280,15 +286,15 @@ html {
   font-size: 16px; }
 
 h1 {
-  color: limegreen;
-  text-shadow: 2px 2px 0px green;
-  font-size: 1.64rem; }
+  color: #264B05;
+  font-size: 1.64rem;
+  font-weight: 500; }
 
 h2 {
-  color: green;
-  text-shadow: 1px 1px 0 #008800;
+  color: #252525;
   text-align: center;
-  font-size: 1.25rem; }
+  font-size: 1.175rem;
+  font-weight: 450; }
 
 h3 {
   color: #005500;
@@ -434,7 +440,6 @@ html {
   background: linear-gradient(black -5%, grey 30%, white, grey 70%, black 105%); }
 
 .project-video--side,
-.main-nav li a,
 .video {
   background: linear-gradient(black -5%, grey, black 105%);
   color: azure;

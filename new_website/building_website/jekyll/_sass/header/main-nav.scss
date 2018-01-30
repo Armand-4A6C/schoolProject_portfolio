@@ -5,11 +5,11 @@
 
 .main-nav li a:hover,
 .main-nav li a:focus {
-	background: linear-gradient(black -5%, grey 30%, white, grey 70%, black 105%);
+	background: linear-gradient($darkgreen -10%, $darkerlightgreen, $darkgreen 110%);
 }
 
 .main-nav li a {
-	background: linear-gradient(black -5%, grey, black 105%);
+	background: linear-gradient($darkgreen -40%, $lightgreen, $darkgreen 140%);
 	color: azure;
 	border: solid black 1px;
 }
@@ -46,6 +46,7 @@ ul {
 
 .main-nav li a,
 .logo {
-	text-shadow: 3px 2px 2px black;
-	// box-shadow: 3px 3px 8px 1px black;
+    text-shadow:
+    1px 1px 0px $darkgreen,
+    2px 2px 1px $darkgreen;
 }
