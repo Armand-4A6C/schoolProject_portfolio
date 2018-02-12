@@ -53,13 +53,13 @@ const ajax_module = (function() {
                 }
                 clearInterval(AsyncWait);
 
-            } else if (count >= 120) {
+            } else if (count >= 40) {
                 clearInterval(AsyncWait);
                 console.log("ajax response timed out");
 
             } else {
                 count ++
-                console.log("waits for an ajax response to use a callback on test " + count + "/120");
+                console.log("waits for an ajax response to use a callback on test " + count + "40");
             }
         }, 250);
     };
