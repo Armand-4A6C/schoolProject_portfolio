@@ -116,11 +116,12 @@ const taxikosten = (function () {
 
     function printData() {
         // kilometer resultaten
-        document.getElementById('result-kms').innerHTML = kilometers + "KM";
+        document.getElementById('result-kms').innerHTML = kilometers + "km";
         document.getElementById('result-prijs-per-km').innerHTML = rekenEenheden.prijsPerKM + "&euro;";
         document.getElementById('result-kilometer-totaal').innerHTML = kosten.km + "&euro;";
 
         // resultaten rit duur
+        document.getElementById('result-gemiddelde-snelheid').innerHTML = rekenEenheden.gemiddeldeSnelheid + "km/h";
         document.getElementById('result-ritduur').innerHTML = rit.duur + "min";
         document.getElementById('result-ritduur-kosten').innerHTML = kosten.ritduur + "&euro;";
         document.getElementById('result-ritprijs-per-minuut').innerHTML = rekenEenheden.prijsPerMinuut + "&euro;";
