@@ -1,7 +1,7 @@
 <?php
+    // var_dump($_POST);
 
 if (isset($_POST['dbcrud']) ) {
-
     if ($_POST['dbcrud'] == "create") {
         create($tableNames[0], $columnNames[0]);
     }

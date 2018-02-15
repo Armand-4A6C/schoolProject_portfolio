@@ -1,26 +1,28 @@
 
-
-
-
-
-<form action="" method="post">
+<div id="myForm">
     <h2>members</h2>
 
     <label for="id">id</label>
     <input type="number" name="id" id="id" value="0"><br>
 
-    <label for="name">Naam</label>
-    <input type="text" name="name" id="name" value=""><br>
+    <label for="naam">Naam</label>
+    <input type="text" name="name" id="naam" value=""><br>
 
     <label for="leeftijd">Leeftijd</label>
     <input type="number" name="leeftijd" id="leeftijd" value="0"><br>
 
-    <button type="submit" name="dbcrud" value="create">create</button>
-    <button type="submit" name="dbcrud" value="read">read</button>
-    <button type="submit" name="dbcrud" value="update">update</button>
-    <button type="submit" name="dbcrud" value="delete">delete</button>
-</form>
+    <button id="create" name="dbcrud" value="create">create</button>
+    <button id="read" name="dbcrud" value="read">read</button>
+    <button id="update" name="dbcrud" value="update">update</button>
+    <button id='delete' name="dbcrud" value="delete">delete</button>
+</div>
+
+<div id="myTable">
+
+</div>
 
 <?php
-    include "php_includes/main.php";
+    // include "php_includes/main.php";
 ?>
+<script src="javascript/ajax_module_v1.0.js"></script>
+<script src="javascript/main.js"></script>
