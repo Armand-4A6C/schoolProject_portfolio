@@ -116,7 +116,7 @@ const fileModule = (function() {
             p_saveNewDir(res);
             console.log(navigation);
 
-            p_showNewDir(currentUrl)
+            p_showNewDir(currentUrl);
         },
 
         scanDir: function(dir) {
