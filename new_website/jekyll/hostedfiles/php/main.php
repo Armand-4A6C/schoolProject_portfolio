@@ -7,13 +7,6 @@ if (isset($_GET["mode"]) ) {
     }
 }
 
-
-
-
-
-
-
-
 if (isset($return)){
     echo json_encode($return);
 } else {

@@ -16,7 +16,6 @@ if (isset($_POST['create'] ) || isset($_POST['read'] ) || isset($_POST['update']
     }
     $url = controlUrl($_POST['url']);
 
-
     function controlCrud($url, $content) {
         // controls the create
         if (isset($_POST['create'] ) ) {

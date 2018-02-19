@@ -69,8 +69,6 @@ const fileModule = (function() {
                 }
                 return localObject;
             }
-
-
         }
 
         for (var i = 0; i < res.length; i++) {
@@ -104,9 +102,6 @@ const fileModule = (function() {
                 fileModule.controlNavigation(event, "down");
             }), 1;
         }
-
-
-
     }
 
 
