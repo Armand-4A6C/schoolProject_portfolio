@@ -104,7 +104,6 @@ const fileModule = (function() {
         }
     }
 
-
     // Public variables + methods
     return {
         // currentUrl: "",
@@ -141,8 +140,6 @@ const fileModule = (function() {
                 while (main.firstChild) {
                     main.removeChild(main.firstChild);
                 }
-
-                // main.innerHTML = "";
 
                 fileModule.scanDir(url)
                 console.log(document.getElementById('main-files').children)

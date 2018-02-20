@@ -5,24 +5,19 @@ const FileModule = (function() {
     **************************/
     const navigationObject = {
         children: {},       //= contains children
-        url: "",            //= contains url to this file
-        extension: "",      //= contains extension
-        folder: false,      //= holds boolean to check if its a folder(true) or not (false)
-        exectuteAble: false //= holds boolean to check if it is executeable (true) or not (false)
+        currentUrl: "",            //= contains url to this file
     };
-    let currentUrl = "";
-    let currentFile = navigationObject;
 
     /***********************
       Start Private Modules
     ***********************/
 
-    const p_IconLoader = (function(Filename) {
+    const p_IconLoader = (function() {
 
-        // >>>set icon
-        function SetIcon () {
+        // >>>set icons
+        function SetIcon (filename) {
             let ext = "";
-            let arrayOfStrings = name.split(".");
+            let arrayOfStrings = filename.split(".");
             let check = arrayOfStrings[arrayOfStrings.length-1];
 
             if (check === "php") {
@@ -59,8 +54,9 @@ const FileModule = (function() {
         }
 
         return {
-            Run: function() {
-                return SetIcon(Filename);
+            // >>>set icons
+            Run: function(filename) {
+                return SetIcon(filename);
             }
         }
 
@@ -69,16 +65,18 @@ const FileModule = (function() {
     const p_DirScanner = (function() {
 
         // >>>ScansDir
-        function ScanDir(dir, nextMethod) {
+        function Run(dir, nextMethod) {
             if (dir === undefined || dir === null) {
                 dir = "";
             }
-            ajax_module.get("php/main.php", {mode:"readDir", url:dir}, nextMethod)
+            ajax_module.get("php/main.php", {mode:"readDir", url:dir}, nextMethod);
         }
 
         return {
+
+            // >>>ScansDir
             Run: function(dir, nextMethod) {
-                ScanDir(dir, nextMethod);
+                Run(dir, nextMethod);
             },
         }
     })();
@@ -86,13 +84,13 @@ const FileModule = (function() {
     const p_EventSetter = (function() {
         function Run(targetElement) {
             targetElement.addEventListener('dblclick', function(event) {
-                FileModule.controlNavigation(event, "down");
+                p_NavObjectController.Run("down", event);
             }), 1;
         }
 
         return {
             Run: function(targetElement) {
-                Run(targetElement)
+                Run(targetElement);
             }
         }
 
@@ -100,10 +98,12 @@ const FileModule = (function() {
 
     const p_ControlView = (function() {
 
-        // >>>loads Files
+        // >>>loads UI
         // >>>fires eventSetter
-        function Run(currentUrl) {
-            let object = navigationObject.children;
+        function Run() {
+            const object = navigationObject.children;
+
+            console.log(navigationObject.children);
 
             for (var key in object) {
                 let newElementParent = document.createElement('div');
@@ -127,14 +127,97 @@ const FileModule = (function() {
         }
 
         return {
-            Run: function(currentUrl) {
-                Run(currentUrl);
+            // >>>loads UI
+            // >>>fires eventSetter
+            Run: function() {
+                Run();
             }
         }
     })();
 
     const p_NavObjectController = (function() {
-        // >>>creates new objects
+
+        // // >>>creates new objects
+        function SetNewNavChildren(res) {
+            navigationObject.children = [];
+            for (var i = 0; i < res.length; i++) {
+                let newObject = {
+                    url: navigationObject.currentUrl + res[i] + "/",
+                    extension: p_IconLoader.Run(res[i])
+                };
+
+                navigationObject.children[res[i]] = newObject;
+            }
+            console.log("p_NavObjectController/SetDir navigationObject");
+            console.log(navigationObject);
+            console.log("");
+        }
+
+        function GetUrlText(url, event) {
+            console.log("p_NavObjectController/GetUrlText()")
+            console.log("");
+            if (!event.target.classList.contains("parent")) {
+                url += event.target.parentElement.children[1].innerHTML;
+            } else {
+                url += event.target.children[1].innerHTML;
+            }
+            return url;
+        }
+
+        function RemoveCurrentItems() {
+            console.log("p_NavObjectController/RemoveCurrentItems()")
+            console.log("");
+
+            let main = document.getElementById('main-files')
+            while (main.firstChild) {
+                main.removeChild(main.firstChild);
+            }
+        }
+
+        function RunStart(travelDirection, Event) {
+            console.log("p_NavObjectController/runStart()");
+            console.log(event);
+            console.log("");
+            if (travelDirection == "down") {
+                let url = navigationObject.currentUrl + "/";
+                url = GetUrlText(url, event);
+                navigationObject.currentUrl = url;
+
+                (function EndOfRunStart(url) {
+                    p_DirScanner.Run(url, DirScannerCallBack);
+
+                    // Required CallbackFunc
+                    function DirScannerCallBack(scanRes) {
+                        parsedRes = JSON.parse(scanRes);
+                        Main(parsedRes);
+                    }
+                })(url);
+
+                // console.log(document.getElementById('main-files').children);
+            }
+        }
+
+        function Main(ParsedRes) {
+            console.log("p_NavObjectController/Main() parsedRes");
+            console.log(parsedRes);
+            console.log("");
+
+            RemoveCurrentItems();
+
+            SetNewNavChildren(parsedRes);
+            p_ControlView.Run();
+        }
+
+        return {
+            // >>>creates new objects
+            SetNewNavChildren: function(res) {
+                return SetNewNavChildren(res);
+            },
+
+            Run: function(travelDirection, Event) {
+                RunStart(travelDirection, Event);
+            }
+        }
         // >>>traverses the navigationObject
         // >>>opens non folders in new testable
         // >>>fires currentDirController()
@@ -147,46 +230,33 @@ const FileModule = (function() {
     })();
 
     const p_InitializationModule = (function() {
-        function Start() {
-            FileModule.DirScanner("", DirScannerCallBack);
-        }
 
-        function DirScannerCallBack(scanRes) {
-            parsedRes = JSON.parse(scanRes);
-            Main(parsedRes);
+        // >>>Loads first items from php
+        function Start() {
+            p_DirScanner.Run("", DirScannerCallBack);
+
+            // Required CallbackFunc
+            function DirScannerCallBack(scanRes) {
+                parsedRes = JSON.parse(scanRes);
+                Main(parsedRes);
+            }
         }
 
         function Main(parsedRes) {
-            console.log("InitializationModule/Main parsedRes")
+            console.log("InitializationModule/Main parsedRes");
             console.log(parsedRes);
-            console.log("")
+            console.log("");
 
-            SetDir(parsedRes);
-            p_ControlView.Run(currentUrl);
+            // >>>Set basic values navigationObject
+            navigationObject.currentUrl = "";
+            p_NavObjectController.SetNewNavChildren(parsedRes);
+
+            // >>>Set EventListener
+            // >>>Sets Ui
+            p_ControlView.Run();
         }
 
-        function SetDir(res) {
-            currentUrl = "";
-
-            for (var i = 0; i < res.length; i++) {
-                let newObject = {url: currentUrl + res[i] + "/", extension: p_IconLoader.Run(res[i]) ,children: {}};
-                navigationObject.children[res[i]] = newObject;
-                currentFile.children[res[i]] = newObject
-            }
-            console.log("InitializationModule/SetDir navigationObject")
-            console.log(navigationObject)
-            console.log("")
-
-            console.log("InitializationModule/SetDir currentFile")
-            console.log(currentFile)
-            console.log("")
-        }
-
-        // >>>set basic values navigationObject
-        // >>>loads first items
         // >>>set urlbar
-        // >>>fires eventSetter()
-
         return {
             Run: function() {
                 Start();
@@ -219,7 +289,6 @@ const FileModule = (function() {
             p_MainRun.Run(res);
         }
     }
-
 })();
 
 FileModule.InitModule();
