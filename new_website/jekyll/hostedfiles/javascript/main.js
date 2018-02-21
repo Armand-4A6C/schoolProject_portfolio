@@ -5,7 +5,7 @@ const FileModule = (function() {
     **************************/
     const navigationObject = {
         children: {},       //= contains children
-        currentUrl: "",            //= contains url to this file
+        currentUrl: "",     //= contains url to this file
     };
 
     /***********************
@@ -197,6 +197,7 @@ const FileModule = (function() {
             }
         }
 
+        // >>>traverses the navigationObject
         function Main(ParsedRes) {
             console.log("p_NavObjectController/Main() parsedRes");
             console.log(parsedRes);
@@ -206,6 +207,8 @@ const FileModule = (function() {
 
             SetNewNavChildren(parsedRes);
             p_ControlView.Run();
+
+            p_CurrentDirController.Run()
         }
 
         return {
@@ -218,7 +221,7 @@ const FileModule = (function() {
                 RunStart(travelDirection, Event);
             }
         }
-        // >>>traverses the navigationObject
+
         // >>>opens non folders in new testable
         // >>>fires currentDirController()
     })();
@@ -227,6 +230,44 @@ const FileModule = (function() {
         // >>>setsUrlBar
         // >>>loads Data
         // >>>set currentDir
+        function SetUrlParts(currentUrlArray) {
+            const urlBar = document.getElementById('urlBar');
+            urlBar.innerHTML = "";
+
+            console.log(currentUrlArray);
+
+            let parentElement = document.createElement("UL");
+            for (let i = 0; i < currentUrlArray.length; i++) {
+
+                let currentItem = document.createElement("LI");
+                currentItem.classList.add("urlBar-item")
+
+                let currentItemLink = document.createElement("A");
+                currentItemLink.classList.add("urlBar-item-link")
+                currentItemLink.innerHTML = currentUrlArray[i];
+
+                currentItem.appendChild(currentItemLink);
+                parentElement.appendChild(currentItem);
+            }
+            console.log(parentElement);
+            document.getElementById('urlBar').appendChild(parentElement);
+            // document.getElementById('urlBar').innerHTML = "aapje"
+        }
+
+        function Run() {
+            let currentUrlArray = navigationObject.currentUrl.split('/');
+            currentUrlArray[0] = "files";
+
+            SetUrlParts(currentUrlArray);
+        }
+
+
+
+        return {
+            Run: function() {
+                Run();
+            }
+        }
     })();
 
     const p_InitializationModule = (function() {
@@ -267,7 +308,7 @@ const FileModule = (function() {
     const p_MainRun = (function() {
         return {
             Run: function() {
-
+                filename.split(".")
             }
         }
     })();
