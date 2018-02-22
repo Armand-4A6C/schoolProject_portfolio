@@ -48,12 +48,6 @@ const fileModule = (function() {
             currentUrl = "";
         } else {
             let urlArray = currentUrl.split('/');
-            // currentFile = urlArray[urlArray.length-1]
-
-            // let object = navigation;
-            // for (var i = 1; i < urlArray.length; i++) {
-            //     object = object.children[urlArray[i]]
-            // }
             console.log(urlArray);
 
             navigation = getUrl(urlArray, navigation);
