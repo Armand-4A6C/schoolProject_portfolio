@@ -88,9 +88,38 @@ const FileModule = (function() {
             }), 1;
         }
 
+        function ReadUpUrl(targetElement, number) {
+            targetElement.addEventListener('dblclick', function(event) {
+                let storeArray = [];
+                console.log("start ReadUpUrl");
+                console.log(number);
+
+                for (let i = number; i>=0; i=i-1) {
+                    let tmp = document.getElementById("url" + (i)).children[0].innerHTML;
+                    console.log(tmp);
+                    console.log(i);
+
+                    if (tmp !== "files") {
+                        storeArray.unshift("/" + tmp);
+                    }
+                }
+                let result = "";
+                for (let i = 0; i < storeArray.length; i++) {
+                    result += storeArray[i];
+                }
+                console.log(result)
+                console.log("");
+
+                p_NavObjectController.Run("up", "", result);
+            }), 1;
+        }
+
         return {
             Run: function(targetElement) {
                 Run(targetElement);
+            },
+            ReadUpUrl: function(targetElement, nr) {
+                ReadUpUrl(targetElement, nr);
             }
         }
 
@@ -174,27 +203,37 @@ const FileModule = (function() {
             }
         }
 
-        function RunStart(travelDirection, Event) {
+        function RunStart(travelDirection, e, receivedUrl) {
             console.log("p_NavObjectController/runStart()");
-            console.log(event);
+            console.log(e);
+            console.log(travelDirection);
+            console.log(receivedUrl);
             console.log("");
+
+            let url;
+
             if (travelDirection == "down") {
-                let url = navigationObject.currentUrl + "/";
-                url = GetUrlText(url, event);
+                url = navigationObject.currentUrl + "/";
+                url = GetUrlText(url, e);
                 navigationObject.currentUrl = url;
 
-                (function EndOfRunStart(url) {
-                    p_DirScanner.Run(url, DirScannerCallBack);
-
-                    // Required CallbackFunc
-                    function DirScannerCallBack(scanRes) {
-                        parsedRes = JSON.parse(scanRes);
-                        Main(parsedRes);
-                    }
-                })(url);
-
-                // console.log(document.getElementById('main-files').children);
+            } else if (travelDirection == "up") {
+                console.log(receivedUrl);
+                url = receivedUrl;
+                navigationObject.currentUrl = url;
+            } else {
+                return false;
             }
+
+            (function EndOfRunStart(url) {
+                p_DirScanner.Run(url, DirScannerCallBack);
+
+                // Required CallbackFunc
+                function DirScannerCallBack(scanRes) {
+                    parsedRes = JSON.parse(scanRes);
+                    Main(parsedRes);
+                }
+            })(url);
         }
 
         // >>>traverses the navigationObject
@@ -217,8 +256,8 @@ const FileModule = (function() {
                 return SetNewNavChildren(res);
             },
 
-            Run: function(travelDirection, Event) {
-                RunStart(travelDirection, Event);
+            Run: function(travelDirection, Event, receivedUrl) {
+                RunStart(travelDirection, Event, receivedUrl);
             }
         }
 
@@ -240,10 +279,11 @@ const FileModule = (function() {
             for (let i = 0; i < currentUrlArray.length; i++) {
 
                 let currentItem = document.createElement("LI");
-                currentItem.classList.add("urlBar-item")
+                currentItem.classList.add("urlBar-item");
+                currentItem.id = "url" + i;
 
                 let currentItemLink = document.createElement("A");
-                currentItemLink.classList.add("urlBar-item-link")
+                currentItemLink.classList.add("urlBar-item-link");
                 currentItemLink.innerHTML = currentUrlArray[i];
 
                 currentItem.appendChild(currentItemLink);
@@ -251,7 +291,11 @@ const FileModule = (function() {
             }
             console.log(parentElement);
             document.getElementById('urlBar').appendChild(parentElement);
-            // document.getElementById('urlBar').innerHTML = "aapje"
+
+            for (let i = 0; i < currentUrlArray.length; i++) {
+                const htmlObject = document.getElementById('url' + i);
+                p_EventSetter.ReadUpUrl(htmlObject, i);
+            }
         }
 
         function Run() {
@@ -260,8 +304,6 @@ const FileModule = (function() {
 
             SetUrlParts(currentUrlArray);
         }
-
-
 
         return {
             Run: function() {
