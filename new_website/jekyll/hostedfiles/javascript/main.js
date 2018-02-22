@@ -89,7 +89,7 @@ const FileModule = (function() {
         }
 
         function ReadUpUrl(targetElement, number) {
-            targetElement.addEventListener('dblclick', function(event) {
+            targetElement.addEventListener('click', function(event) {
                 let storeArray = [];
                 console.log("start ReadUpUrl");
                 console.log(number);
@@ -114,12 +114,32 @@ const FileModule = (function() {
             }), 1;
         }
 
+        function ReadUpIcon() {
+            document.getElementById('mapUp').addEventListener("click", function(){
+                let result = "";
+                let urlArray = navigationObject.currentUrl.split("/")
+                urlArray.pop();
+
+                for (var i = 0; i < urlArray.length; i++) {
+                    if (urlArray[i] !== "") {
+                        result += "/" + urlArray[i];
+                    }
+
+                }
+
+                p_NavObjectController.Run("up", "", result);
+            });
+        }
+
         return {
             Run: function(targetElement) {
                 Run(targetElement);
             },
             ReadUpUrl: function(targetElement, nr) {
                 ReadUpUrl(targetElement, nr);
+            },
+            ReadUpIcon :function() {
+                ReadUpIcon();
             }
         }
 
@@ -337,6 +357,7 @@ const FileModule = (function() {
             // >>>Set EventListener
             // >>>Sets Ui
             p_ControlView.Run();
+            p_EventSetter.ReadUpIcon();
         }
 
         // >>>set urlbar
