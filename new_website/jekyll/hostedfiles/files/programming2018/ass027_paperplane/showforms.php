@@ -6,6 +6,7 @@
     <head>
         <meta charset="utf-8">
         <title>show shizzle</title>
+        <link rel="stylesheet" href="css/master.css">
     </head>
     <body>
          <table border="1">
@@ -25,10 +26,10 @@
                      <td>Range</td><td><?php echo $_SESSION["range"] ?></td>
                  </tr>
                  <tr>
-                     <td>Datum</td><td><?php echo $_SESSION["datum"] ?></td>
+                     <td>Datum</td><td><?php echo $_SESSION["datum"] ?> </td>
                  </tr>
                  <tr>
-                     <td>Color</td><td><?php echo $_POST["color"] ?></td>
+                     <td>Color</td><td><?php echo $_POST["color"] ?><div style="height: 10px; width:10px; background-color:<?php echo $_POST["color"] ?>></div></td>
                  </tr>
                  <tr>
                      <td>Omschrijving</td><td><?php echo $_POST["omschrijving"] ?></td>
