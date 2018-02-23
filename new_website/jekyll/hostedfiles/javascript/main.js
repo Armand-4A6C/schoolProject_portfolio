@@ -124,7 +124,6 @@ const FileModule = (function() {
                     if (urlArray[i] !== "") {
                         result += "/" + urlArray[i];
                     }
-
                 }
 
                 p_NavObjectController.Run("up", "", result);
