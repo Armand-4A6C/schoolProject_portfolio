@@ -26,7 +26,7 @@ body {
     border: 1px solid white;
 }
 .urlBar-MapUp:hover {
-    border: #aaa 1px solid;
+    border: 2px solid #888;
     background-color: #33c;
     z-index: 0px;
 }
@@ -36,20 +36,17 @@ body {
     background-color: white;
     background-repeat: no-repeat;
     background-position: center;
-    width: 30px;
-    height: 30px;
-    background-size: 26px;
-    /* opacity: 0.5; */
+    width: 28px;
+    height: 28px;
+    background-size: 22px;
     position: absolute;
     z-index: -1;
 }
 .urlBar-MapUp:hover:after {
     background-image: url("../icons/upAMap.png");
-    background-color: white;
     opacity: 0.8;
     z-index: 2;
 }
-
 
 .urlBar {
     float: left;
@@ -98,6 +95,7 @@ body {
     max-width: 120px;
     max-height: 45px;
     word-wrap: break-word;
+    margin-top: 0px;
 }
 
 .main-files-item:hover,
