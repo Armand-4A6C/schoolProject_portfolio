@@ -38,14 +38,17 @@ const FileModule = (function() {
             } else if ( (check === "doc") || (check === "docx") ) {
                 ext = "/doc.png";
 
-            } else if (check === "txt"){
-                ext = "/txt.png";
-
             } else if (check === "md") {
                 ext = "/md.png";
 
+            } else if (check === "txt"){
+                ext = "/txt.png";
+
             } else if (check === "json") {
                 ext = "/json.png";
+
+            } else if (check === "rar") {
+                ext = "/rar.png";
 
             } else {
                 ext = "/folder.png";
@@ -116,9 +119,15 @@ const FileModule = (function() {
 
         function ReadUpIcon() {
             document.getElementById('mapUp').addEventListener("click", function(){
+
                 let result = "";
-                let urlArray = navigationObject.currentUrl.split("/")
+                let urlArray = navigationObject.currentUrl.split("/");
                 urlArray.pop();
+
+                if (urlArray.length == 0) {
+                    alert("Allready at the root");
+                    return;
+                }
 
                 for (var i = 0; i < urlArray.length; i++) {
                     if (urlArray[i] !== "") {
@@ -185,13 +194,72 @@ const FileModule = (function() {
 
     const p_NavObjectController = (function() {
 
+        function checkFolder(fileName) {
+            let ext = "";
+            let arrayOfStrings = fileName.split(".");
+            let check = arrayOfStrings[arrayOfStrings.length-1];
+
+            if (
+                check === "php"  ||
+                check === "html" ||
+                check === "css"  ||
+                check === "js"   ||
+
+                check === "png"  ||
+                check === "jpeg" ||
+                check === "jpg"  ||
+
+                check === "md"   ||
+                check === "txt"  ||
+                check === "json" ||
+                check === "sql"  ||
+
+                check === "doc"  ||
+                check === "docx" ||
+
+                check === "rar"
+            ) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function checkExecutable(fileName) {
+            let ext = "";
+            let arrayOfStrings = fileName.split(".");
+            let check = arrayOfStrings[arrayOfStrings.length-1];
+
+            if (
+                check === "php"  ||
+                check === "html" ||
+                check === "css"  ||
+                check === "js"   ||
+                check === "png"  ||
+                check === "jpeg" ||
+                check === "jpg"  ||
+                check === "md"   ||
+                check === "txt"  ||
+                check === "json" ||
+                check === "sql"
+            ) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
         // // >>>creates new objects
         function SetNewNavChildren(res) {
             navigationObject.children = [];
             for (var i = 0; i < res.length; i++) {
                 let newObject = {
                     url: navigationObject.currentUrl + res[i] + "/",
-                    extension: p_IconLoader.Run(res[i])
+                    extension: p_IconLoader.Run(res[i]),
+                    folder: checkFolder(res[i]),
+                    executeable: checkExecutable(res[i])
                 };
 
                 navigationObject.children[res[i]] = newObject;
