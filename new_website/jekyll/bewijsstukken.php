@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Bewijsstukken
-description: hoi
-keywords: this is a website
+description: Welkom op de bewijsstukken pagina hier kunt u informatie mijn bewijst stukken bekijken
+keywords: bewijsstukken armaniimus webdevelopment armand van alphen
 ---
 
 <div class="row title-wrap">
@@ -33,7 +33,7 @@ keywords: this is a website
             <a href="https://1drv.ms/f/s!Avkeqi3JT-srgnK07OM_r7OJJxG3" rel="nofollow" target="_blank">link</a>
 
     		<h3>Engels certificaat vmbo kader leerjaar 2</h3>
-            <a href="https://1drv.ms/b/s!Avkeqi3JT-sriAy07OM_r7OJJxG3" rel="nofollow" target="_blank"></a>
+            <a href="https://1drv.ms/b/s!Avkeqi3JT-sriAy07OM_r7OJJxG3" rel="nofollow" target="_blank">link</a>
 
     		<h3>Engels certificaat vmbo kader leerjaar 3</h3>
             <a href="https://1drv.ms/b/s!Avkeqi3JT-sriA207OM_r7OJJxG3" rel="nofollow" target="_blank">link</a>
