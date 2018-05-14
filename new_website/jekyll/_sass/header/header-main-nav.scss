@@ -4,18 +4,18 @@ ul {
 }
 
 // sticks the main navigation to the top and removes unnessecary margin to the bottom
-.main-nav {
+.header-main-nav {
     margin: 0px;
 }
 
-.main-nav li {
+.header-main-nav li {
     padding-top: 0px;
     padding-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.main-nav li a {
+.header-main-nav li a {
 	background: linear-gradient($darkgreen -40%, $lightgreen, $darkgreen 140%);
 	color: azure;
 	border: solid black 1px;
@@ -25,16 +25,16 @@ ul {
     width: 100%;
 }
 
-.main-nav li a:hover,
-.main-nav li a:focus {
+.header-main-nav li a:hover,
+.header-main-nav li a:focus {
 	background: linear-gradient($darkgreen -10%, $darkerlightgreen, $darkgreen 110%);
 }
 
 // removes unnecessary padding inherited from the grid
 nav,
-.main-nav,
-.main-nav li,
-.main-nav > .dropdown-nav {
+.header-main-nav,
+.header-main-nav li,
+.header-main-nav > .dropdown-nav {
     padding: 0px;
 }
 
@@ -58,7 +58,7 @@ nav,
     width: 100%;
 }
 
-.main-nav li a,
+.header-main-nav li a,
 .dropdown-content li a {
     padding: 15px;
 }
@@ -70,12 +70,12 @@ nav,
 
 @media only screen and (min-width: 600px) {
     // sets the main-nav to auto
-    .main-nav li li a {
+    .header-main-nav li li a {
         height: auto;
     }
 
     // makes sure the logo stands beside the navigation bar
-    .main-nav {
+    .header-main-nav {
         padding-left: 50px;
         margin-left: -50px;
     }
