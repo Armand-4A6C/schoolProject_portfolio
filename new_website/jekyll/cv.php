@@ -25,6 +25,11 @@ keywords: this is a website
         <section id="cv-stages" class="third-layer">
             <h2>Stages</h2>
 
+            <h3>Impact4roi</h3>
+            <p>Aug 2017 –  feb 2018, Nieuwegein, Stagiair applicatie en mediaontwikkeling</p>
+            <p>Gedurende mijn stage heb ik het bedrijf geholpen met het repareren van 45 aan elkaar verbonden sites, Enkele hiervan zijn <a href="http://surinaamsevlag.nl">surinaamsevlag.nl</a>,  <a href="http://vlagengeland.nl">vlagengeland.nl</a>, andere vlaggen zijn te vinden via <a href="http://allevlaggenvandewereld.nl/">allevlaggenvandewereld.nl</a>.</p>
+
+
             <h3>Boekenfestijn</h3>
             <p>Juli 2014 –  okt 2014, IJsselstein, stagiaire magazijnmedewerker</p>
         	<p>Gedurende mijn stage was ik verantwoordelijk voor het voorraadbeheer. Zoals de goederen uitpakken, het tellen controleren en het prijzen daarvan.</p>
