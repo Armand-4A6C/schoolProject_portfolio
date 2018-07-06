@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    width: 100%;
+}
+
+.workBar {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    clear: both;
+    height: 30px;
+}
+
+.urlBar-MapUp {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    background-size: contain;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.urlBar-MapUp:hover {
+    border: 2px solid #888;
+    background-color: #33c;
+    z-index: 0px;
+}
+.urlBar-MapUp:after {
+    content: "";
+    background-image: url("../icons/upAMap.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 28px;
+    height: 28px;
+    background-size: 22px;
+    position: absolute;
+    z-index: -1;
+}
+.urlBar-MapUp:hover:after {
+    background-image: url("../icons/upAMap.png");
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.urlBar {
+    float: left;
+    border: solid black 1px;
+    min-height: 30px;
+    width: calc(100% - 30px);
+    margin: 0px;
+}
+
+.urlBar ul {
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.urlBar-item {
+    list-style: none;
+    float: left;
+    padding: 3px 0;
+}
+
+.urlBar-item:hover {
+    cursor: pointer;
+    color: darkblue;
+    text-shadow: 1px 1px 1px lightblue;
+    background-color: #efefef;
+}
+
+.urlBar-item-link:before {
+    font-weight: bold;
+    content: "/";
+}
+
+.main-files-item-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.main-files-item {
+    float: left;
+    height: 110px;
+    width: 110px;
+    padding: 15px;
+}
+
+.main-files-item p {
+    max-width: 120px;
+    max-height: 45px;
+    word-wrap: break-word;
+    margin-top: 0px;
+}
+
+.main-files-item:hover,
+.main-files-item-icon:hover {
+    background-color: lightblue;
+    cursor: pointer;
+
+}
