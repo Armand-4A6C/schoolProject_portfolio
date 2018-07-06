@@ -1,4 +1,4 @@
-ErrorDocument 404 404.html
+ErrorDocument 404 /index.php?view=404
 
 RewriteEngine On    # Turn on the rewriting engine
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^/d]+)/?$ index.php?view=$1 [L,QSA]
