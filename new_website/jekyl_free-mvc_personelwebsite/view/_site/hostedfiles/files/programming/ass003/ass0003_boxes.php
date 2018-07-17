@@ -73,7 +73,7 @@
                 }
                 $color = $colors[$y];
             }
-            $result .= "<div class='box float col-12 col-m-6 col-la-4 col-h-3' style='background-color:$color'><i class='blackicon fa " . $currentIcon[1] . "'></i></div>";
+            $result .= "<div class='box float float-l col-xs-12 float-l col-m-6 float-l colla-4 float-l colh-3' style='background-color:$color'><i class='blackicon fa " . $currentIcon[1] . "'></i></div>";
 
         }
         return $result;

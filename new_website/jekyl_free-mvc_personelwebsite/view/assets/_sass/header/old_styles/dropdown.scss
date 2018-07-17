@@ -1,0 +1,32 @@
+ @media only screen and (min-width: 600px) {
+
+    //makes sure the dropdown shows propely
+    .projecten,
+    .cvee {
+    	position: relative;
+    }
+
+    //hides dropdown-content
+    .dropdown-content {
+        position: absolute;
+        visibility: hidden;
+        margin-top: -1px;
+    }
+
+    .dropdown-content a {
+        display: block;
+    }
+
+    //shows the dropdown menu when hovering or focusing
+    .projecten:hover .dropdown-content,
+    .projecten a:focus + .dropdown-content,
+
+    .cvee:hover .dropdown-content,
+    .cvee a:focus + .dropdown-content,
+
+    .dropdown-content a:focus,
+    .dropdown-content a:focus ~ a {
+    	visibility: visible;
+        border: 1px solid black;
+    }
+}

@@ -24,7 +24,7 @@
 
 <!--nav -->
 <header class="row">
-    <div class="header-top-bar col-xs-12"></div>
+    <div class="header-top-bar float-l col-xs-12"></div>
 
     <div class="headwrap">
         <img src="images/logo/logo.png" alt="" class="header-logo">
@@ -32,27 +32,27 @@
 
         <div class="header-main">
             <nav>
-                <ul class="col-6 col-m-6 header-main-nav">
-                    <li class="col-3 col-m-3"><a href="index" class="col-12 col-m-12">Home</a></li>
+                <ul class="float-l col-xs-6 float-l col-m-6 header-main-nav">
+                    <li class="float-l col-xs-3 float-l col-m-3"><a href="index" class="float-l col-xs-12 float-l col-m-12">Home</a></li>
 
-                    <li class="col-3 col-m-3 cvee dropdown-nav">
+                    <li class="float-l col-xs-3 float-l col-m-3 cvee dropdown-nav">
                         <a href="#" class="hid-if-mob dropbtn">Cv en etc.</a>
                         <ul class="dropdown-content">
-                            <li><a href="cv" class="col-12 col-m-12">CV</a></li>
-                            <li><a href="overmij" class="col-12 col-m-12">Over mij</a></li>
-                            <li><a href="bewijsstukken" class="col-12 col-m-12">Bewijsstukken</a></li>
+                            <li><a href="cv" class="float-l col-xs-12 float-l col-m-12">CV</a></li>
+                            <li><a href="overmij" class="float-l col-xs-12 float-l col-m-12">Over mij</a></li>
+                            <li><a href="bewijsstukken" class="float-l col-xs-12 float-l col-m-12">Bewijsstukken</a></li>
                         </ul>
                     </li>
 
-                    <li class="col-3 col-m-3 projecten dropdown-nav">
+                    <li class="float-l col-xs-3 float-l col-m-3 projecten dropdown-nav">
                         <a href="#" class="hid-if-mob dropbtn">Projecten</a>
                         <ul class="dropdown-content">
-                            <li><a href="projecten-met-video" class="col-12 col-m-12">Projecten met video</a></li>
-                            <li><a href="projecten-zonder-video" class="col-12 col-m-12">Projecten zonder video</a></li>
+                            <li><a href="projecten-met-video" class="float-l col-xs-12 float-l col-m-12">Projecten met video</a></li>
+                            <li><a href="projecten-zonder-video" class="float-l col-xs-12 float-l col-m-12">Projecten zonder video</a></li>
                         </ul>
                     </li>
 
-                    <li class="col-3 col-m-3"><a href="contact" class="col-12 col-m-12">Contact</a></li>
+                    <li class="float-l col-xs-3 float-l col-m-3"><a href="contact" class="float-l col-xs-12 float-l col-m-12">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -63,9 +63,9 @@
 <!--main -->
 <div class="row">
     <div class="hid-no-desk"></div>
-    <div class="col-10 col-m-12 main">
+    <div class="float-l col-m-10 float-l col-m-12 main">
         <div class="row title-wrap">
-    <div class="title-head col-12 col-m-12">
+    <div class="title-head float-l col-xs-12 float-l col-m-12">
         <h1>Projecten zonder video</h1>
 
         <!-- <p>Op deze pagina kan je lezen wie ik ben in het stuk <strong><a href="#overmij-wie_ben_ik">Wie ben ik?</a></strong></p>
@@ -78,7 +78,7 @@
 
 <main>
     <div class="row">
-        <div class="col-4 col-m-4 third-layer-wrap">
+        <div class="float-l col-xs-4 float-l col-m-4 third-layer-wrap">
             <div class="third-layer project_nv">
                 <h3>Navigatie vanuit dropdown knop<h3>
                 <img src="images\project_zv\navigatie_dropdown+hamburger.png" alt="">
@@ -89,7 +89,7 @@
             </div>
         </div>
 
-        <div class="col-4 col-m-4 third-layer-wrap">
+        <div class="float-l col-xs-4 float-l col-m-4 third-layer-wrap">
             <div class="third-layer  project_nv">
                 <h3>Navigatie dropdown<h3>
                 <img src="images\project_zv\navigatie_dropdown.png" alt="">
@@ -100,7 +100,7 @@
             </div>
         </div>
 
-        <div class="col-4 col-m-4 third-layer-wrap">
+        <div class="float-l col-xs-4 float-l col-m-4 third-layer-wrap">
             <div class="third-layer project_nv">
                 <h3>Onclick pause animation<h3>
                 <img src="images\project_zv\oefening_mid animation_pause+onclick_hide_reveal.png" alt="">
@@ -112,7 +112,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-4 col-m-4 third-layer-wrap">
+        <div class="float-l col-xs-4 float-l col-m-4 third-layer-wrap">
             <div class="third-layer project_nv">
                 <h3>Push in on hover<h3>
                 <img src="images\project_zv\push_in_on_hover.png" alt="">
@@ -123,7 +123,7 @@
             </div>
         </div>
 
-        <div class="col-4 col-m-4 third-layer-wrap">
+        <div class="float-l col-xs-4 float-l col-m-4 third-layer-wrap">
             <div class="third-layer project_nv">
                 <h3>Size transform on hover<h3>
                 <img src="images\project_zv\vierkant_width_height_transfer_on_hover.png" alt="">
@@ -141,11 +141,11 @@
 </div>
 
 <!--footer -->
-<footer class="footer col-12">
-    <ul class="col-12 float upper-footer">
+<footer class="footer float-l col-xs-12">
+    <ul class="float-l col-xs-12 float upper-footer">
 
         <!-- collumn-1 -->
-        <ul class="col-4 float footer-box">
+        <ul class="float-l col-xs-4 float footer-box">
             <li>
                 <h5 class="footer-h5">Onze visie</h5>
                 <p class="footer-visie">
@@ -164,7 +164,7 @@
         </ul>
 
         <!-- collumn-2 -->
-        <ul class="col-4 float footer-box">
+        <ul class="float-l col-xs-4 float footer-box">
             <li>
                 <h5 class="footer-h5">Meest interesante pagina's</h5>
                 <ul class="footer-middle-box footer-linkbox">
@@ -177,7 +177,7 @@
         </ul>
 
         <!-- collumn-3 -->
-        <ul class="col-4 float footer-box">
+        <ul class="float-l col-xs-4 float footer-box">
             <li>
                 <h5 class="footer-h5">Contact etc.</h5>
                 <ul class="footer-linkbox">
@@ -188,8 +188,8 @@
         </ul>
     </ul>
 
-    <div class="lower-footer col-12 float">
-        <div class="footer-copy col-12 float">&copy; ArmaniimusWebdevelopment</div>
+    <div class="lower-footer float-l col-xs-12 float">
+        <div class="footer-copy float-l col-xs-12 float">&copy; ArmaniimusWebdevelopment</div>
     </div>
 </footer>
 

@@ -1,0 +1,19 @@
+// sets the properties of the logo
+.header-logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+
+    text-shadow: 1px 1px 0px $darkgreen, 2px 2px 1px $darkgreen;
+}
+
+// makes sure that the navigation looks as 1 thing
+@media only screen and (min-width: 600px) {
+    .header-logo {
+        float: left;
+    }
+}

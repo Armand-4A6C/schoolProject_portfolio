@@ -19,12 +19,11 @@
     </script>
 </head>
 
-
 <body>
 
 <!--nav -->
 <header class="row">
-    <div class="header-top-bar col-xs-12"></div>
+    <div class="header-top-bar float-l col-xs-12"></div>
 
     <div class="headwrap">
         <img src="images/logo/logo.png" alt="" class="header-logo">
@@ -32,27 +31,27 @@
 
         <div class="header-main">
             <nav>
-                <ul class="col-6 col-m-6 header-main-nav">
-                    <li class="col-3 col-m-3"><a href="index" class="col-12 col-m-12">Home</a></li>
+                <ul class="float-l col-xs-6 float-l col-m-6 header-main-nav">
+                    <li class="float-l col-xs-3 float-l col-m-3"><a href="index" class="float-l col-xs-12 float-l col-m-12">Home</a></li>
 
-                    <li class="col-3 col-m-3 cvee dropdown-nav">
+                    <li class="float-l col-xs-3 float-l col-m-3 cvee dropdown-nav">
                         <a href="#" class="hid-if-mob dropbtn">Cv en etc.</a>
                         <ul class="dropdown-content">
-                            <li><a href="cv" class="col-12 col-m-12">CV</a></li>
-                            <li><a href="overmij" class="col-12 col-m-12">Over mij</a></li>
-                            <li><a href="bewijsstukken" class="col-12 col-m-12">Bewijsstukken</a></li>
+                            <li><a href="cv" class="float-l col-xs-12 float-l col-m-12">CV</a></li>
+                            <li><a href="overmij" class="float-l col-xs-12 float-l col-m-12">Over mij</a></li>
+                            <li><a href="bewijsstukken" class="float-l col-xs-12 float-l col-m-12">Bewijsstukken</a></li>
                         </ul>
                     </li>
 
-                    <li class="col-3 col-m-3 projecten dropdown-nav">
+                    <li class="float-l col-xs-3 float-l col-m-3 projecten dropdown-nav">
                         <a href="#" class="hid-if-mob dropbtn">Projecten</a>
                         <ul class="dropdown-content">
-                            <li><a href="projecten-met-video" class="col-12 col-m-12">Projecten met video</a></li>
-                            <li><a href="projecten-zonder-video" class="col-12 col-m-12">Projecten zonder video</a></li>
+                            <li><a href="projecten-met-video" class="float-l col-xs-12 float-l col-m-12">Projecten met video</a></li>
+                            <li><a href="projecten-zonder-video" class="float-l col-xs-12 float-l col-m-12">Projecten zonder video</a></li>
                         </ul>
                     </li>
 
-                    <li class="col-3 col-m-3"><a href="contact" class="col-12 col-m-12">Contact</a></li>
+                    <li class="float-l col-xs-3 float-l col-m-3"><a href="contact" class="float-l col-xs-12 float-l col-m-12">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -63,9 +62,9 @@
 <!--main -->
 <div class="row">
     <div class="hid-no-desk"></div>
-    <div class="col-10 col-m-12 main">
+    <div class="float-l col-m-10 float-l col-m-12 main">
         <div class="row title-wrap">
-    <div class="title-head col-12 col-m-12">
+    <div class="title-head float-l col-xs-12 float-l col-m-12">
         <h1>Projecten met video</h1>
 
         <!-- <p>Op deze pagina kan je lezen wie ik ben in het stuk <strong><a href="#overmij-wie_ben_ik">Wie ben ik?</a></strong></p>
@@ -77,7 +76,7 @@
 </div>
 
 <main>
-    <div class="col-9 col-m-9 video-wrap">
+    <div class="float-l col9 float-l col-m-9 video-wrap">
         <section id="project-video" class="third-layer">
             <iframe id="video" src="" frameborder="0" allowfullscreen></iframe>
             <p id="video-beschrijving">
@@ -85,7 +84,7 @@
         </section>
     </div>
 
-    <div class="col-3 col-m-3 fourth-layer-wrap vwrap">
+    <div class="float-l col-xs-3 float-l col-m-3 fourth-layer-wrap vwrap">
         <div id="boter_kaas_en_eieren" class="project-video--side video-button">
             <h2>Boter kaas en eieren</h2>
             <img src="images/project_mv/boter_kaas_en_eieren.png" alt="">
@@ -109,11 +108,11 @@
 </div>
 
 <!--footer -->
-<footer class="footer col-12">
-    <ul class="col-12 float upper-footer">
+<footer class="footer float-l col-xs-12">
+    <ul class="float-l col-xs-12 float upper-footer">
 
         <!-- collumn-1 -->
-        <ul class="col-4 float footer-box">
+        <ul class="float-l col-xs-4 float footer-box">
             <li>
                 <h5 class="footer-h5">Onze visie</h5>
                 <p class="footer-visie">
@@ -132,7 +131,7 @@
         </ul>
 
         <!-- collumn-2 -->
-        <ul class="col-4 float footer-box">
+        <ul class="float-l col-xs-4 float footer-box">
             <li>
                 <h5 class="footer-h5">Meest interesante pagina's</h5>
                 <ul class="footer-middle-box footer-linkbox">
@@ -145,7 +144,7 @@
         </ul>
 
         <!-- collumn-3 -->
-        <ul class="col-4 float footer-box">
+        <ul class="float-l col-xs-4 float footer-box">
             <li>
                 <h5 class="footer-h5">Contact etc.</h5>
                 <ul class="footer-linkbox">
@@ -156,8 +155,8 @@
         </ul>
     </ul>
 
-    <div class="lower-footer col-12 float">
-        <div class="footer-copy col-12 float">&copy; ArmaniimusWebdevelopment</div>
+    <div class="lower-footer float-l col-xs-12 float">
+        <div class="footer-copy float-l col-xs-12 float">&copy; ArmaniimusWebdevelopment</div>
     </div>
 </footer>
 

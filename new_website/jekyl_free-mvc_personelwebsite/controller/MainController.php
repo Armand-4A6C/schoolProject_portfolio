@@ -1,77 +1,53 @@
 <?php
 
-require_once "model/EntryModel.php";
-require_once "controller/ViewController.php";
-
 class MainController {
     private $EntryModel;
+    private $ViewController;
 
-    public function __construct($dbName, $username, $pass, $serverAdress = "localhost", $dbType = "mysql" ) {
+    function __Construct        ($dbName, $username, $pass, $serverAdress, $dbType) {
         $this->EntryModel       = new EntryModel    ($dbName, $username, $pass, $serverAdress, $dbType);
         $this->ViewController   = new ViewController();
     }
 
-    public function __destruct() {
+    function __Destruct() {
         $this->EntryModel       = NULL;
         $this->ViewController   = NULL;
     }
 
-    public function handleRequest() {
-
-        if (isset($_GET["view"])) {
-            $view = $_GET["view"];
-        } else {
-            $view = "";
-        }
-
-        switch ($view) {
-
-            case 'home':
-                $this->Controller_Home();
-                break;
-
-            case 'cv';
-                $this->controller_cv();
-                break;
-
-            case 'overmij';
-                $this->controller_overmij();
-                break;
-
-            case 'projectenmetvid';
-                $this->Controller_projectenMetVid();
-                break;
-
-            case 'projectenzondervid';
-                $this->Controller_projectenZonderVid();
-                break;
-
-            case 'contact':
-                $this->Controller_Contact();
-                break;
-
-            case '404':
-                $this->controller_404();
-                break;
-
-            default:
-                $this->Controller_Home();
-                break;
-        }
-    }
-
-    public function controller_404() {
-        // include "view/default.php";
+    public function Controller_404() {
+        return $this->ViewController->_404();
     }
 
     public function Controller_Home() {
+        return $this->ViewController->Home();
+    }
 
+    public function Controller_Cv() {
+        return $this->ViewController->Cv();
+    }
+
+    public function Controller_Overmij() {
+        return $this->ViewController->Overmij();
+    }
+
+    public function Controller_Bewijsstukken() {
+        return $this->ViewController->Bewijsstukken();
+    }
+
+    public function Controller_ProjectenMetVid() {
+        return $this->ViewController->ProjectenMetVid();
+    }
+
+    public function Controller_ProjectenZonderVid() {
+        return $this->ViewController->ProjectenZonderVid();
     }
 
     public function Controller_Contact() {
-        include "view/contact.php";
+        return $this->ViewController->Contact();
     }
 
+    public function Controller_Sitemap() {
+        return $this->ViewController->Sitemap();
+    }
 }
-
 ?>
