@@ -23,7 +23,18 @@
     border: solid green 1px;
 } */
 
+// set defaults for display classes
+.display-xs-block,
+.display-s-block,
+.display-m-block,
+.display-l-block,
+.display-xl-block {
+    display: none;
+}
+
 /* For smallest devices: */
+.display-xs-block {display:block;}
+
 .col-xs-1 {width: 8.33%;}
 .col-xs-2 {width: 16.66%;}
 .col-xs-3 {width: 25%;}
@@ -39,6 +50,8 @@
 
 /* For small devices: */
 @media only screen and (min-width: 600px) {
+    .display-s-block {display:block;}
+
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}
@@ -55,6 +68,8 @@
 
 /* For medium devices */
 @media only screen and (min-width: 768px) {
+    .display-m-block {display:block;}
+
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
     .col-m-3 {width: 25%;}
@@ -71,6 +86,8 @@
 
 /* for large devices: */
 @media only screen and (min-width: 1000px) {
+    .display-l-block {display:block;}
+
     .col-l-1 {width: 8.33%;}
     .col-l-2 {width: 16.66%;}
     .col-l-3 {width: 25%;}
@@ -87,6 +104,8 @@
 
 /* for extra large devices */
 @media only screen and (min-width: 1280px) {
+    .display-xl-block {display:block;}
+
     .col-xl-1 {width: 8.33%;}
     .col-xl-2 {width: 16.66%;}
     .col-xl-3 {width: 25%;}
