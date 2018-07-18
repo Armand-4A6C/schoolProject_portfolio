@@ -19,9 +19,9 @@ class ViewController {
         $main = file_get_contents("view/assets/partials/home.html");
         $this->TemplatingSystem->SetTemplateData("main", $main);
 
-        $this->TemplatingSystem->SetTemplateData("title", "home");
-        $this->TemplatingSystem->SetTemplateData("keywords", "home");
-        $this->TemplatingSystem->SetTemplateData("description", "home sweet home");
+        $this->TemplatingSystem->SetTemplateData("title", "Home");
+        $this->TemplatingSystem->SetTemplateData("keywords", "home, Armaniimus, Webdevelopment, Armand, van, Alphen,");
+        $this->TemplatingSystem->SetTemplateData("description", "Op deze homepagina kunt u een overzicht zien over de rest van de website");
 
         return $this->TemplatingSystem->GetParsedTemplate();
     }
@@ -29,11 +29,10 @@ class ViewController {
     public function Cv() {
         $this->defaultTemplating();
 
-        // $main = file_get_contents("view/assets/partials/home.html");
-        $main = "<div style='height: 250px;'></div>";
+        $main = file_get_contents("view/assets/partials/cv.html");
         $this->TemplatingSystem->SetTemplateData("main", $main);
 
-        $this->TemplatingSystem->SetTemplateData("title", "");
+        $this->TemplatingSystem->SetTemplateData("title", "Cv");
         $this->TemplatingSystem->SetTemplateData("keywords", "");
         $this->TemplatingSystem->SetTemplateData("description", "");
 
@@ -43,11 +42,10 @@ class ViewController {
     public function Bewijsstukken() {
         $this->defaultTemplating();
 
-        // $main = file_get_contents("view/assets/partials/home.html");
-        $main = "<div style='height: 250px;'></div>";
+        $main = file_get_contents("view/assets/partials/bewijsstukken.html");
         $this->TemplatingSystem->SetTemplateData("main", $main);
 
-        $this->TemplatingSystem->SetTemplateData("title", "");
+        $this->TemplatingSystem->SetTemplateData("title", "Bewijsstukken");
         $this->TemplatingSystem->SetTemplateData("keywords", "");
         $this->TemplatingSystem->SetTemplateData("description", "");
 
