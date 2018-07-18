@@ -404,6 +404,7 @@ footer, main, header {
   margin-right: 0px; }
 
 .container {
+  padding: 30px;
   border: #bbb solid 1px;
   background-color: #fff; }
 
