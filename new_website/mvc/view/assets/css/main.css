@@ -19,7 +19,17 @@
 /* [class*="col-"] {
     border: solid green 1px;
 } */
+.display-xs-block,
+.display-s-block,
+.display-m-block,
+.display-l-block,
+.display-xl-block {
+  display: none; }
+
 /* For smallest devices: */
+.display-xs-block {
+  display: block; }
+
 .col-xs-1 {
   width: 8.33%; }
 
@@ -58,6 +68,9 @@
 
 /* For small devices: */
 @media only screen and (min-width: 600px) {
+  .display-s-block {
+    display: block; }
+
   .col-s-1 {
     width: 8.33%; }
 
@@ -95,6 +108,9 @@
     width: 100%; } }
 /* For medium devices */
 @media only screen and (min-width: 768px) {
+  .display-m-block {
+    display: block; }
+
   .col-m-1 {
     width: 8.33%; }
 
@@ -132,6 +148,9 @@
     width: 100%; } }
 /* for large devices: */
 @media only screen and (min-width: 1000px) {
+  .display-l-block {
+    display: block; }
+
   .col-l-1 {
     width: 8.33%; }
 
@@ -169,6 +188,9 @@
     width: 100%; } }
 /* for extra large devices */
 @media only screen and (min-width: 1280px) {
+  .display-xl-block {
+    display: block; }
+
   .col-xl-1 {
     width: 8.33%; }
 
@@ -371,6 +393,45 @@ nav,
 .footer-visie {
   color: white; }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: #ded; }
+
+footer, main, header {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.container {
+  border: #bbb solid 1px;
+  background-color: #fff; }
+
+.small-container {
+  padding: 0px 15px; }
+
+.third-layer--h2 {
+  padding: 10px;
+  margin: 0px; }
+
+.third-layer--h3 {
+  padding: 20px 0px 5px 0px;
+  margin: 0px; }
+
+.third-layer--p {
+  padding: 0px;
+  margin: 0px; }
+
+.third-layer--a {
+  color: black;
+  cursor: pointer;
+  padding: 0px;
+  margin-top: 0px; }
+
+.third-layer a:hover {
+  color: #000;
+  text-shadow: 1px 1px 1px #080; }
+
 .header-main-nav li,
 .header-main-nav li a,
 .dropdown-content a {
@@ -388,15 +449,6 @@ ul li {
   margin-top: 40px;
   list-style-type: disc;
   list-style-position: inside; }
-
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0px; }
-
-footer, main, header {
-  margin-left: 0px;
-  margin-right: 0px; }
 
 * {
   font-size: 1rem; }
@@ -435,10 +487,8 @@ html {
 
 .title-head {
   border-radius: 2px;
-  border: grey solid 1px;
   display: table;
-  padding: 10px 15px 20px 15px;
-  margin: 15px 0px 0px 0px; }
+  padding: 10px 0px 20px 0px; }
 
 .title-head h1 {
   padding: 5px;
@@ -473,17 +523,11 @@ html {
 
   .title-head h2 {
     padding: 0 10px; } }
-.third-layer-wrap {
-  padding: 0px 15px; }
-
 .video-wrap {
   padding: 15px; }
 
 .third-layer {
-  border-radius: 2px;
-  border: grey solid 1px;
-  padding: 15px 30px;
-  margin: 30px 0px 0px 0px; }
+  border-radius: 2px; }
 
 .third-layer h2 {
   padding: 10px;
@@ -596,6 +640,11 @@ html {
 
 .video-button {
   cursor: pointer; }
+
+.cv--section--h2 {
+  display: inline-block;
+  border-bottom: dashed 1px black;
+  padding-bottom: 4px; }
 
 .home-img {
   padding-left: 10px;
