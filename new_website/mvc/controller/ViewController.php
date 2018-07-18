@@ -55,11 +55,10 @@ class ViewController {
     public function Overmij() {
         $this->defaultTemplating();
 
-        // $main = file_get_contents("view/assets/partials/home.html");
-        $main = "<div style='height: 250px;'></div>";
+        $main = file_get_contents("view/assets/partials/overmij.html");
         $this->TemplatingSystem->SetTemplateData("main", $main);
 
-        $this->TemplatingSystem->SetTemplateData("title", "");
+        $this->TemplatingSystem->SetTemplateData("title", "Overmij");
         $this->TemplatingSystem->SetTemplateData("keywords", "");
         $this->TemplatingSystem->SetTemplateData("description", "");
 
@@ -69,11 +68,10 @@ class ViewController {
     public function Projectenzondervid() {
         $this->defaultTemplating();
 
-        // $main = file_get_contents("view/assets/partials/home.html");
-        $main = "<div style='height: 250px;'></div>";
+        $main = file_get_contents("view/assets/partials/projecten-zonder-video.html");
         $this->TemplatingSystem->SetTemplateData("main", $main);
 
-        $this->TemplatingSystem->SetTemplateData("title", "");
+        $this->TemplatingSystem->SetTemplateData("title", "Projecten Zonder Video");
         $this->TemplatingSystem->SetTemplateData("keywords", "");
         $this->TemplatingSystem->SetTemplateData("description", "");
 
@@ -83,11 +81,10 @@ class ViewController {
     public function Projectenmetvid() {
         $this->defaultTemplating();
 
-        // $main = file_get_contents("view/assets/partials/home.html");
-        $main = "<div style='height: 250px;'></div>";
+        $main = file_get_contents("view/assets/partials/projecten-met-video.html");
         $this->TemplatingSystem->SetTemplateData("main", $main);
 
-        $this->TemplatingSystem->SetTemplateData("title", "");
+        $this->TemplatingSystem->SetTemplateData("title", "Projecten Met Video");
         $this->TemplatingSystem->SetTemplateData("keywords", "");
         $this->TemplatingSystem->SetTemplateData("description", "");
 
@@ -97,11 +94,10 @@ class ViewController {
     public function Contact() {
         $this->defaultTemplating();
 
-        // $main = file_get_contents("view/assets/partials/home.html");
-        $main = "<div style='height: 250px;'></div>";
+        $main = file_get_contents("view/assets/partials/contact.html");
         $this->TemplatingSystem->SetTemplateData("main", $main);
 
-        $this->TemplatingSystem->SetTemplateData("title", "");
+        $this->TemplatingSystem->SetTemplateData("title", "Contact");
         $this->TemplatingSystem->SetTemplateData("keywords", "");
         $this->TemplatingSystem->SetTemplateData("description", "");
 
