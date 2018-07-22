@@ -255,6 +255,9 @@
   background-image: url("../images/cutheader.jpg");
   height: 150px; }
 
+.header-li {
+  min-width: 130px; }
+
 ul {
   list-style-type: none; }
 
