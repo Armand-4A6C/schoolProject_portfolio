@@ -1,0 +1,48 @@
+<!--Auteur Armand van Alphen-->
+<!DOCTYPE html>
+<html lang=nl>
+	<head>
+		<style>	
+			.zichtbaarblok{
+				/* zorgt ervoor dat het blokje onzichtbaar is als er niet gehovert wordt*/
+				overflow: hidden;
+				/*height moet evenhoog zijn als childs zijn afstand van de top*/
+				height: 500px;
+				
+				width: 300px;
+				border: solid black 1px;
+				background-color: lightblue;
+			}
+			.onzichtbaarblok{
+				/* zorgt ervoor dat het blokje onzichtbaar is als er niet gehovert wordt*/
+				top: 500px;
+				
+				height: 100px;
+				width: 100%;
+				position: relative;
+				border-top: solid black 1px;
+				background-color: white;
+				
+				/*de animatie zelf */
+				-webkit-transition: all 1.5s;
+				transition: all 0.9s;
+			}
+			/*activeert de animatie voor het naar binnen schuiven van het element */
+			.zichtbaarblok:hover .onzichtbaarblok{
+				top: 400px;
+				
+			}
+
+			
+		</style>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<br><br><br><br>
+		<div class=zichtbaarblok>
+			<div class=onzichtbaarblok> dit is het overlay blokje</div>
+		</div>
+		
+	</body>
+</html>

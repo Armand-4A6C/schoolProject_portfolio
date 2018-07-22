@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang=nl>
+	<head>
+		<style>
+			#blok1{
+				border: solid black 1px;
+				height: 200px;
+				width: 400px;
+			}
+			.square{
+				border: dashed blue 3px;
+				height: 80px;
+				width: 80px;
+				float:left;
+				margin-left: 3px;
+				border-radius: 15%;
+				text-align: center;	
+			}
+			.row1{
+				float: left;
+			}
+			.button{
+				background-color: yellow;
+				border-radius: 50%;
+				border: 1px solid black;
+				height: 50px;
+				width: 50px;
+				text-align: center;
+			}
+			/* animatie part a */
+        @-webkit-keyframes spin{
+            from{ -webkit-transform: rotate(0deg);}
+            to{ -webkit-transform: rotate(360deg);}
+        }
+        @keyframes spin{
+            from{ transform: rotate(0deg);}
+            to{ transform: rotate(360deg);}
+        }  
+			
+/* animation part b */
+#div2{  
+        -webkit-animation-name: spin;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+    
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function:ease-in-out;
+}
+#functions{
+	margin-top: 20px;
+	margin-bottom: 20px;
+			}
+		</style>
+		<link rel=stylesheet href=ergens>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id=blok1>
+			<div>
+				<div class=row1>
+					<div class=button onclick="document.getElementById('div1').style.display='block'; document.getElementById('div3').style.display='block';" >
+						A
+					</div>
+					<div class=button onclick="document.getElementById('div2').style.webkitAnimationPlayState = 'paused';
+											   
+					document.getElementById('div2').style.AnimationPlayState = 'paused';">
+						C
+					</div>
+				</div>
+				<div class=row1>
+					<div class=button onclick="document.getElementById('div1').style.display='none'; document.getElementById('div3').style.display='none';">
+						B
+					</div>
+					<div class=button onclick="document.getElementById('div2').style.webkitAnimationPlayState = 'running';">
+						D
+					</div>
+				</div>
+			</div>
+			<div id=functions>
+				<div class=square id=div1>
+					1
+				</div>
+				<div class=square id=div2>
+					2
+				</div>
+				<div class=square id=div3>
+					3
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
