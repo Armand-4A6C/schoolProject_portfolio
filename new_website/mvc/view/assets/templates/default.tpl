@@ -16,4 +16,5 @@
     <!-- <?php include "view/assets/templates/footer.tpl" ?> -->
 
     <script src="view/assets/js/nav_controller.js"></script>
+    <script src="view/assets/js/hamburger_controller.js"></script>
 </body>

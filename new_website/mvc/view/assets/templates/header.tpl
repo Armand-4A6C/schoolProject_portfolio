@@ -11,7 +11,7 @@
 
         <!-- main nav -->
         <nav class="header-main">
-            <ul class="float-l header-main-ul">
+            <ul class="float-l header-main-ul mobile_display_none">
                 <li class="float-l header-li">
                     <a href="home" class="float-l">Home <i class="fas fa-home"></i></a>
                 </li>

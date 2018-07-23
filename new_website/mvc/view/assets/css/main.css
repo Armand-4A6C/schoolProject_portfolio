@@ -393,7 +393,10 @@ nav,
 
   .dropdown-content {
     margin-left: 140px;
-    top: 0px; } }
+    top: 0px; }
+
+  .mobile_display_none {
+    display: none; } }
 .footer {
   position: relative;
   top: 30px; }
