@@ -39,7 +39,7 @@ function AddClass(itemNr) {
 }
 
 // add focus and unfocus events to (.dropdown-ul)
-function SetEventListeners() {
+function SetDropdownEventListeners() {
     // control Offclick
     document.body.click(function() { controlOffClick() });
 
@@ -70,4 +70,4 @@ function SetEventListeners() {
     }
 }
 
-SetEventListeners();
+SetDropdownEventListeners();
