@@ -1,0 +1,92 @@
+ /****
+ * creates the correct spacing for the nav
+ ****/
+
+.header-li a,
+.dropdown-content li a {
+    padding: 15px;
+}
+
+.header-li,
+.dropdown-content li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dropdown-title {
+    display: block;
+    padding: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header-main-nav {
+    margin: 0px;
+}
+
+// removes unnecessary padding inherited from the grid
+nav,
+.header-main-nav,
+.header-li,
+.header-main-nav > .dropdown-nav {
+    padding: 0px;
+}
+
+.headwrap {
+    padding: 0px;
+    margin: 0px;
+}
+
+/****
+* Color Styles
+****/
+.header-li a,
+.dropdown-title,
+.dropdown-content li a {
+    background: linear-gradient($darkgreen -40%, $lightgreen, $darkgreen 140%);
+    color: azure;
+    border: solid black 1px;
+    text-shadow: 1px 1px 0px $darkgreen, 2px 2px 1px $darkgreen;
+}
+
+.header-li a:hover,
+.header-li a:focus,
+.dropdown-title:hover,
+.dropdown-title:focus,
+.dropdown-content li a:hover,
+.dropdown-content li a:focus {
+    background: linear-gradient($darkgreen -10%, $darkerlightgreen, $darkgreen 110%);
+}
+
+/****
+* creates the correct width for the navigation
+****/
+.dropdown-content,
+.dropdown-content li,
+.dropdown-content li a,
+.header-li a {
+    width: 100%;
+}
+
+.dropdown-title {
+    min-width: 140px;
+}
+
+.header-li a,
+.dropdown-title {
+    height: 50px;
+}
+
+.dropdown-content li a {
+    height: auto;
+}
+
+
+/****
+* Removes list styles
+****/
+ul {
+    list-style-type: none;
+}
