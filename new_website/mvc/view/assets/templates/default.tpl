@@ -14,4 +14,6 @@
 
     {footer}
     <!-- <?php include "view/assets/templates/footer.tpl" ?> -->
+
+    <script src="view/assets/js/nav_controller.js"></script>
 </body>

@@ -1,70 +1,669 @@
-/*
-Error: File to import not found or unreadable: moblile-nav.scss.
-        on line 10 of _sass/header/index.scss
-        from line 7 of _sass/index.scss
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
 
-5: @import 'colors/index.scss';
-6: @import 'grid/index.scss';
-7: @import 'header/index.scss';
-8: @import 'footer/index.scss';
-9: @import 'layout/index.scss';
-10: @import 'layers/index.scss';
-11: @import 'specific-pages/index.scss';
+/* grid support function1: */
+* {
+  box-sizing: border-box; }
 
-Backtrace:
-_sass/header/index.scss:10
-_sass/index.scss:7
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: moblile-nav.scss.\A         on line 10 of _sass/header/index.scss\A         from line 7 of _sass/index.scss\A \A 5: @import 'colors/index.scss';\A 6: @import 'grid/index.scss';\A 7: @import 'header/index.scss';\A 8: @import 'footer/index.scss';\A 9: @import 'layout/index.scss';\A 10: @import 'layers/index.scss';\A 11: @import 'specific-pages/index.scss';"; }
+/* grid support function2: */
+.float,
+.float-l {
+  float: left; }
+
+.float-r {
+  float: right; }
+
+/*test function*/
+/* [class*="col-"] {
+    border: solid green 1px;
+} */
+.display-xs-block,
+.display-s-block,
+.display-m-block,
+.display-l-block,
+.display-xl-block {
+  display: none; }
+
+/* For smallest devices: */
+.display-xs-block {
+  display: block; }
+
+.col-xs-1 {
+  width: 8.33%; }
+
+.col-xs-2 {
+  width: 16.66%; }
+
+.col-xs-3 {
+  width: 25%; }
+
+.col-xs-4 {
+  width: 33.33%; }
+
+.col-xs-5 {
+  width: 41.66%; }
+
+.col-xs-6 {
+  width: 50%; }
+
+.col-xs-7 {
+  width: 58.33%; }
+
+.col-xs-8 {
+  width: 66.66%; }
+
+.col-xs-9 {
+  width: 75%; }
+
+.col-xs-10 {
+  width: 83.33%; }
+
+.col-xs-11 {
+  width: 91.66%; }
+
+.col-xs-12 {
+  width: 100%; }
+
+/* For small devices: */
+@media only screen and (min-width: 600px) {
+  .display-s-block {
+    display: block; }
+
+  .col-s-1 {
+    width: 8.33%; }
+
+  .col-s-2 {
+    width: 16.66%; }
+
+  .col-s-3 {
+    width: 25%; }
+
+  .col-s-4 {
+    width: 33.33%; }
+
+  .col-s-5 {
+    width: 41.66%; }
+
+  .col-s-6 {
+    width: 50%; }
+
+  .col-s-7 {
+    width: 58.33%; }
+
+  .col-s-8 {
+    width: 66.66%; }
+
+  .col-s-9 {
+    width: 75%; }
+
+  .col-s-10 {
+    width: 83.33%; }
+
+  .col-s-11 {
+    width: 91.66%; }
+
+  .col-s-12 {
+    width: 100%; } }
+/* For medium devices */
+@media only screen and (min-width: 768px) {
+  .display-m-block {
+    display: block; }
+
+  .col-m-1 {
+    width: 8.33%; }
+
+  .col-m-2 {
+    width: 16.66%; }
+
+  .col-m-3 {
+    width: 25%; }
+
+  .col-m-4 {
+    width: 33.33%; }
+
+  .col-m-5 {
+    width: 41.66%; }
+
+  .col-m-6 {
+    width: 50%; }
+
+  .col-m-7 {
+    width: 58.33%; }
+
+  .col-m-8 {
+    width: 66.66%; }
+
+  .col-m-9 {
+    width: 75%; }
+
+  .col-m-10 {
+    width: 83.33%; }
+
+  .col-m-11 {
+    width: 91.66%; }
+
+  .col-m-12 {
+    width: 100%; } }
+/* for large devices: */
+@media only screen and (min-width: 1000px) {
+  .display-l-block {
+    display: block; }
+
+  .col-l-1 {
+    width: 8.33%; }
+
+  .col-l-2 {
+    width: 16.66%; }
+
+  .col-l-3 {
+    width: 25%; }
+
+  .col-l-4 {
+    width: 33.33%; }
+
+  .col-l-5 {
+    width: 41.66%; }
+
+  .col-l-6 {
+    width: 50%; }
+
+  .col-l-7 {
+    width: 58.33%; }
+
+  .col-l-8 {
+    width: 66.66%; }
+
+  .col-l-9 {
+    width: 75%; }
+
+  .col-l-10 {
+    width: 83.33%; }
+
+  .col-l-11 {
+    width: 91.66%; }
+
+  .col-l-12 {
+    width: 100%; } }
+/* for extra large devices */
+@media only screen and (min-width: 1280px) {
+  .display-xl-block {
+    display: block; }
+
+  .col-xl-1 {
+    width: 8.33%; }
+
+  .col-xl-2 {
+    width: 16.66%; }
+
+  .col-xl-3 {
+    width: 25%; }
+
+  .col-xl-4 {
+    width: 33.33%; }
+
+  .col-xl-5 {
+    width: 41.66%; }
+
+  .col-xl-6 {
+    width: 50%; }
+
+  .col-xl-7 {
+    width: 58.33%; }
+
+  .col-xl-8 {
+    width: 66.66%; }
+
+  .col-xl-9 {
+    width: 75%; }
+
+  .col-xl-10 {
+    width: 83.33%; }
+
+  .col-xl-11 {
+    width: 91.66%; }
+
+  .col-xl-12 {
+    width: 100%; } }
+@media only screen and (min-width: 600px) {
+  .dropdown-ul {
+    position: relative; }
+
+  .dropdown-content {
+    position: absolute;
+    visibility: hidden;
+    margin-top: -1px; }
+
+  .dropdown-content li a {
+    display: block; }
+
+  .clicked-dropdown .dropdown-content,
+  .dropdown-ul:hover .dropdown-content,
+  .dropdown-ul li:focus + .dropdown-content,
+  .dropdown-content li:focus,
+  .dropdown-content li:focus ~ li {
+    visibility: visible;
+    border: 1px solid black; } }
+.header-top-bar {
+  background-color: #264B05;
+  height: 35px; }
+
+.header-main {
+  background-image: url("../images/cutheader.jpg");
+  height: 150px; }
+
+.dropdown-title {
+  min-width: 140px; }
+
+ul {
+  list-style-type: none; }
+
+.header-main-nav {
+  margin: 0px; }
+
+.header-li,
+.dropdown-title,
+.dropdown-content li {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.header-li a,
+.dropdown-title {
+  height: 50px; }
+
+.header-li a,
+.dropdown-title,
+.dropdown-content li a {
+  background: linear-gradient(#264B05 -40%, #70CF1B, #264B05 140%);
+  color: azure;
+  border: solid black 1px;
+  text-shadow: 1px 1px 0px #264B05, 2px 2px 1px #264B05; }
+
+.header-li a:hover,
+.header-li a:focus,
+.dropdown-title:hover,
+.dropdown-title:focus,
+.dropdown-content li a:hover,
+.dropdown-content li a:focus {
+  background: linear-gradient(#264B05 -10%, #50b015, #264B05 110%); }
+
+nav,
+.header-main-nav,
+.header-li,
+.dropdown-title,
+.header-main-nav > .dropdown-nav {
+  padding: 0px; }
+
+.hid-if-mob {
+  display: none; }
+
+@media only screen and (min-width: 600px) {
+  .hid-if-mob {
+    display: block; } }
+.dropdown-content,
+.dropdown-content li,
+.dropdown-content li a,
+.header-li a {
+  width: 100%; }
+
+.header-li a,
+.dropdown-title,
+.dropdown-content li a {
+  padding: 15px; }
+
+.headwrap {
+  padding: 0px;
+  margin: 0px; }
+
+@media only screen and (min-width: 600px) {
+  .dropdown-content li a {
+    height: auto; }
+
+  .header-main-nav {
+    padding-left: 50px;
+    margin-left: -50px; } }
+.header-logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  margin: 0px;
+  padding: 0px;
+  height: 50px;
+  text-shadow: 1px 1px 0px #264B05, 2px 2px 1px #264B05; }
+
+@media only screen and (min-width: 600px) {
+  .header-logo {
+    float: left; } }
+.footer {
+  position: relative;
+  top: 30px; }
+
+.footer-visie,
+.footer-linkbox a {
+  font-size: 0.8rem; }
+
+.footer-visie {
+  margin: 0 0 6px 0; }
+
+.footer-visie-bottom {
+  padding-top: 6px;
+  font-size: 0.85rem; }
+
+.footer-h5 {
+  color: #264B05;
+  text-shadow: 1px 1px 0px #121, 1px 1px 1px #121;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 1.05rem;
+  padding: 0 5px; }
+
+.footer-box {
+  padding: 10px; }
+
+.upper-footer {
+  background-color: #70CF1B;
+  padding: 0 2.5%;
+  margin-bottom: 0px; }
+
+.lower-footer {
+  margin-top: 0px;
+  background-color: #264B05;
+  padding: 15px 2.5%; }
+
+.footer-copy {
+  color: #ddd;
+  padding: 0 10px;
+  text-align: center; }
+
+.footer-middle-box {
+  border-left: solid black 1px;
+  border-right: solid black 1px; }
+
+.footer-linkbox {
+  padding-top: 10px; }
+
+.footer-link {
+  text-align: center;
+  text-decoration: none;
+  margin: 0px; }
+
+.footer-link a {
+  padding: 2px;
+  cursor: pointer;
+  text-decoration: none; }
+
+.footer-link a,
+.footer-visie {
+  text-shadow: 1px 1px 0px #264B05; }
+
+.footer-link:hover a {
+  color: #933; }
+
+.lower-footer,
+.footer-link a,
+.footer-visie {
+  color: white; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: #ded; }
+
+footer, main, header {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.container {
+  padding: 30px;
+  border: #bbb solid 1px;
+  background-color: #fff; }
+
+.small-container {
+  padding: 0px 15px; }
+
+.third-layer--h2 {
+  padding: 10px;
+  margin: 0px; }
+
+.third-layer--h3 {
+  padding: 20px 0px 5px 0px;
+  margin: 0px; }
+
+.third-layer--p {
+  padding: 0px;
+  margin: 0px; }
+
+.third-layer--a {
+  color: black;
+  cursor: pointer;
+  padding: 0px;
+  margin-top: 0px; }
+
+.third-layer a:hover {
+  color: #000;
+  text-shadow: 1px 1px 1px #080; }
+
+.header-main-nav li a,
+.dropdown-title,
+.dropdown-content a {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; }
+
+ul {
+  padding: 0px; }
+
+ul li {
+  margin: 15px 0px; }
+
+#overmij-wat_kan_ik ul {
+  margin-top: 40px;
+  list-style-type: disc;
+  list-style-position: inside; }
+
+* {
+  font-size: 1rem; }
+
+html {
+  font-size: 16px; }
+
+h1 {
+  margin-bottom: -10px;
+  color: #282828;
+  font-size: 1.64rem;
+  font-weight: 500; }
+
+h2 {
+  padding-left: 5px;
+  margin-bottom: -10px;
+  color: #282828;
+  font-size: 1.175rem;
+  font-weight: 450; }
+
+h3 {
+  color: #005500;
+  text-align: left;
+  font-size: 1.125rem; }
+
+h3 a {
+  color: darkgreen; }
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+  display: block;
+  z-index: 0; }
+
+.title-wrap {
+  padding: 15px 15px; }
+
+.title-head {
+  border-radius: 2px;
+  display: table;
+  padding: 10px 0px 20px 0px; }
+
+.title-head h1 {
+  padding: 5px;
+  margin-top: 3px;
+  margin-right: 0;
+  margin-bottom: -15px;
+  margin-left: 0; }
+
+.title-p-wrap p {
+  text-align: left;
+  margin: 7px 0px 0px 0px;
+  padding: 5px 10px;
+  width: 100%; }
+
+.title-p-wrap p strong a {
+  color: black;
+  cursor: pointer;
+  padding: 0px; }
+
+.title-p-wrap p strong a:hover {
+  color: #000;
+  text-shadow: 1px 1px 1px #080; }
+
+@media (min-width: 600px) {
+  .title-wrap {
+    padding: 0px 15px;
+    margin: 0px;
+    text-decoration: none; }
+
+  .title-head p {
+    padding: 0 10px; }
+
+  .title-head h2 {
+    padding: 0 10px; } }
+.video-wrap {
+  padding: 15px; }
+
+.third-layer {
+  border-radius: 2px; }
+
+.third-layer h2 {
+  padding: 10px;
+  margin: 0px; }
+
+.third-layer h3 {
+  padding: 20px 0px 5px 0px;
+  margin: 0px; }
+
+.third-layer p {
+  padding: 0px;
+  margin: 0px; }
+
+.third-layer a {
+  color: black;
+  cursor: pointer;
+  padding: 0px;
+  margin-top: 0px; }
+
+.third-layer a:hover {
+  color: #000;
+  text-shadow: 1px 1px 1px #080; }
+
+.project_nv img {
+  max-width: 100%;
+  margin: 0px 0px; }
+
+.project_nv {
+  padding: 10px; }
+
+.project_nv p {
+  margin: 0px 5px; }
+
+.project_nv h3 {
+  margin: 0px 5px; }
+
+.vwrap {
+  padding: 0px;
+  margin: 0px; }
+
+.fourth-layer-extra {
+  text-shadow: 3px 2px 2px black;
+  box-shadow: 3px 3px 8px 1px black; }
+
+.header-logo {
+  border: solid black 1px; }
+
+.fourth-layer-wrap {
+  margin-top: 30px;
+  background-color: none;
+  padding: 0px 15px 0px 0px;
+  margin: 0px; }
+
+#project-video iframe {
+  padding: 5px;
+  margin: 0px;
+  border-radius: 10px;
+  width: 100%;
+  height: 50vw;
+  margin: 0px; }
+
+@media only screen and (min-width: 600px) {
+  #project-video iframe {
+    height: 30vw; } }
+#project-video {
+  padding: 15px 15px 0px 15px;
+  margin: 0px; }
+
+#video-beschrijving {
+  padding: 15px 5% 0px 5%;
+  margin: 0px;
+  height: 200px;
+  width: 100%; }
+
+.project-video--side:hover,
+.video:hover,
+.project-video--side:focus,
+.video:focus {
+  background: linear-gradient(black -5%, grey 30%, white, grey 70%, black 105%); }
+
+.project-video--side,
+.video {
+  background: linear-gradient(black -5%, grey, black 105%);
+  color: azure;
+  border: solid black 1px; }
+
+.project-video--side {
+  margin-top: 15px;
+  background-color: none;
+  padding: 16px;
+  width: 50%;
+  float: left;
+  border: solid #010101 2px; }
+
+@media (min-width: 600px) {
+  .project-video--side {
+    width: 100%;
+    float: none;
+    min-height: 0px; } }
+.project-video--h2 {
+  font-size: 15px;
+  text-align: left;
+  padding: 0px;
+  margin: 0px 0px 4px 0px; }
+
+.project-video--img {
+  width: 100%;
+  border: solid 1px #111;
+  padding: 0px; }
+
+.video-button {
+  cursor: pointer; }
+
+.cv--section--h2 {
+  display: inline-block;
+  border-bottom: dashed 1px black;
+  padding-bottom: 4px; }
+
+.home-img {
+  padding-left: 10px;
+  margin-top: -2px; }
+
+/*# sourceMappingURL=main.css.map */

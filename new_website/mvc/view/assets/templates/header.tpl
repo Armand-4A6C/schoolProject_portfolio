@@ -13,19 +13,19 @@
                     </li>
 
                     <ul class="float-l dropdown-ul">
-                        <li class="dropdown-title">Projecten</li>
-                        <ul class="dropdown-content">
-                            <li><a href="projecten-metvid" class="float-l">Projecten met video</a></li>
-                            <li><a href="projecten-zondervid" class="float-l">Projecten zonder video</a></li>
-                        </ul>
-                    </ul>
-
-                    <ul class="float-l dropdown-ul">
                         <li class="dropdown-title">Cv en etc.</li>
                         <ul class="dropdown-content">
                             <li><a href="cv" class="float-l">CV</a></li>
                             <li><a href="overmij" class="float-l">Over mij</a></li>
                             <li><a href="bewijsstukken" class="float-l">Bewijsstukken</a></li>
+                        </ul>
+                    </ul>
+
+                    <ul class="float-l dropdown-ul">
+                        <li class="dropdown-title">Projecten</li>
+                        <ul class="dropdown-content">
+                            <li><a href="projecten-metvid" class="float-l">Projecten met video</a></li>
+                            <li><a href="projecten-zondervid" class="float-l">Projecten zonder video</a></li>
                         </ul>
                     </ul>
 

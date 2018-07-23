@@ -17,6 +17,8 @@
    }
 
    //shows the dropdown menu when hovering or focusing
+   .clicked-dropdown .dropdown-content,
+   
    .dropdown-ul:hover .dropdown-content,
    .dropdown-ul li:focus + .dropdown-content,
    .dropdown-content li:focus,
