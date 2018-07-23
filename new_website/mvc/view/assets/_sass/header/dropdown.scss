@@ -1,8 +1,7 @@
 @media only screen and (min-width: 600px) {
 
    //makes sure the dropdown shows propely
-   .projecten,
-   .cvee {
+   .dropdown-ul {
        position: relative;
    }
 
@@ -13,19 +12,15 @@
        margin-top: -1px;
    }
 
-   .dropdown-content a {
+   .dropdown-content li a {
        display: block;
    }
 
    //shows the dropdown menu when hovering or focusing
-   .projecten:hover .dropdown-content,
-   .projecten a:focus + .dropdown-content,
-
-   .cvee:hover .dropdown-content,
-   .cvee a:focus + .dropdown-content,
-
-   .dropdown-content a:focus,
-   .dropdown-content a:focus ~ a {
+   .dropdown-ul:hover .dropdown-content,
+   .dropdown-ul li:focus + .dropdown-content,
+   .dropdown-content li:focus,
+   .dropdown-content li:focus ~ li {
        visibility: visible;
        border: 1px solid black;
    }
