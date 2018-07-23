@@ -45,11 +45,14 @@ function SetEventListeners() {
 
     for (let i = 0; i < dropdownUl.length; i++) {
 
-        // Main eventListeners
+        // set OnClick EventListeners
         dropdownUl[i].addEventListener('click', function(){ControlFocusDropdown(i)});
-        dropdownUl[i].addEventListener('focus', function(){ControlFocusDropdown(i)});
-        dropdownUl[i].addEventListener('blur', function(){ControlBlurDropdown(i)});
-        dropdownUl[i].setAttribute('tabindex', '0');
+
+        // Set Dropdown-Title eventListeners
+        const dropdownTitle = dropdownUl[i].querySelector(".dropdown-title");
+        dropdownTitle.addEventListener('focus', function(){ControlFocusDropdown(i)});
+        dropdownTitle.addEventListener('blur', function(){ControlBlurDropdown(i)});
+        dropdownTitle.setAttribute('tabindex', '0');
 
         // set childEventListeners
         const dropdownUl_Li_A = dropdownUl[i].querySelectorAll("LI A");
