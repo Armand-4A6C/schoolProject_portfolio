@@ -1,0 +1,18 @@
+
+/****
+* Removes list styles
+****/
+ul {
+    list-style-type: none;
+}
+
+/****
+* Set Correct text decorations
+****/
+.header-li a,
+.dropdown-title,
+.dropdown-content li a {
+	cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}

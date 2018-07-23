@@ -1,6 +1,6 @@
- /****
- * creates the correct spacing for the nav
- ****/
+/****
+* creates the correct spacing for the nav
+****/
 
 .header-li a,
 .dropdown-content li a {
@@ -22,42 +22,21 @@
     margin-bottom: 0px;
 }
 
-.header-main-nav {
+.header-main-ul {
     margin: 0px;
 }
 
 // removes unnecessary padding inherited from the grid
 nav,
-.header-main-nav,
+.header-main-ul,
 .header-li,
-.header-main-nav > .dropdown-nav {
+.header-main-ul > .dropdown-nav {
     padding: 0px;
 }
 
 .headwrap {
     padding: 0px;
     margin: 0px;
-}
-
-/****
-* Color Styles
-****/
-.header-li a,
-.dropdown-title,
-.dropdown-content li a {
-    background: linear-gradient($darkgreen -40%, $lightgreen, $darkgreen 140%);
-    color: azure;
-    border: solid black 1px;
-    text-shadow: 1px 1px 0px $darkgreen, 2px 2px 1px $darkgreen;
-}
-
-.header-li a:hover,
-.header-li a:focus,
-.dropdown-title:hover,
-.dropdown-title:focus,
-.dropdown-content li a:hover,
-.dropdown-content li a:focus {
-    background: linear-gradient($darkgreen -10%, $darkerlightgreen, $darkgreen 110%);
 }
 
 /****
@@ -81,12 +60,4 @@ nav,
 
 .dropdown-content li a {
     height: auto;
-}
-
-
-/****
-* Removes list styles
-****/
-ul {
-    list-style-type: none;
 }

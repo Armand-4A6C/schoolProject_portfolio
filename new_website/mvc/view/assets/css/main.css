@@ -247,42 +247,9 @@
   background-image: url("../images/cutheader.jpg");
   height: 150px; }
 
-.header-main-nav {
+.header-main-ul {
   padding-left: 50px;
   margin-left: -50px; }
-
-/****
-* creates the correct spacing for the nav
-****/
-.header-li a,
-.dropdown-content li a {
-  padding: 15px; }
-
-.header-li,
-.dropdown-content li {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-.dropdown-title {
-  display: block;
-  padding: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-.header-main-nav {
-  margin: 0px; }
-
-nav,
-.header-main-nav,
-.header-li,
-.header-main-nav > .dropdown-nav {
-  padding: 0px; }
-
-.headwrap {
-  padding: 0px;
-  margin: 0px; }
 
 /****
 * Color Styles
@@ -304,6 +271,55 @@ nav,
   background: linear-gradient(#264B05 -10%, #50b015, #264B05 110%); }
 
 /****
+* Removes list styles
+****/
+ul {
+  list-style-type: none; }
+
+/****
+* Set Correct text decorations
+****/
+.header-li a,
+.dropdown-title,
+.dropdown-content li a {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; }
+
+/****
+* creates the correct spacing for the nav
+****/
+.header-li a,
+.dropdown-content li a {
+  padding: 15px; }
+
+.header-li,
+.dropdown-content li {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.dropdown-title {
+  display: block;
+  padding: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.header-main-ul {
+  margin: 0px; }
+
+nav,
+.header-main-ul,
+.header-li,
+.header-main-ul > .dropdown-nav {
+  padding: 0px; }
+
+.headwrap {
+  padding: 0px;
+  margin: 0px; }
+
+/****
 * creates the correct width for the navigation
 ****/
 .dropdown-content,
@@ -321,12 +337,6 @@ nav,
 
 .dropdown-content li a {
   height: auto; }
-
-/****
-* Removes list styles
-****/
-ul {
-  list-style-type: none; }
 
 .footer {
   position: relative;
@@ -437,13 +447,6 @@ footer, main, header {
 .third-layer a:hover {
   color: #000;
   text-shadow: 1px 1px 1px #080; }
-
-.header-main-nav li a,
-.dropdown-title,
-.dropdown-content a {
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none; }
 
 ul {
   padding: 0px; }

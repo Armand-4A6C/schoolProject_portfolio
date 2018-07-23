@@ -1,0 +1,20 @@
+/****
+* Color Styles
+****/
+.header-li a,
+.dropdown-title,
+.dropdown-content li a {
+    background: linear-gradient($darkgreen -40%, $lightgreen, $darkgreen 140%);
+    color: azure;
+    border: solid black 1px;
+    text-shadow: 1px 1px 0px $darkgreen, 2px 2px 1px $darkgreen;
+}
+
+.header-li a:hover,
+.header-li a:focus,
+.dropdown-title:hover,
+.dropdown-title:focus,
+.dropdown-content li a:hover,
+.dropdown-content li a:focus {
+    background: linear-gradient($darkgreen -10%, $darkerlightgreen, $darkgreen 110%);
+}
