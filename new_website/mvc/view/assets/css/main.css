@@ -240,9 +240,9 @@
   height: 50px;
   text-shadow: 1px 1px 0px #264B05, 2px 2px 1px #264B05; }
 
-@media only screen and (min-width: 600px) {
-  .header-logo {
-    float: left; } }
+.header-logo {
+  float: left; }
+
 .header-main {
   background-image: url("../images/cutheader.jpg");
   height: 150px; }
@@ -338,6 +338,38 @@ nav,
 .dropdown-content li a {
   height: auto; }
 
+.dropdown-ul {
+  position: relative; }
+
+.dropdown-content {
+  position: absolute;
+  visibility: hidden;
+  margin-top: -1px; }
+
+.dropdown-content li a {
+  display: block; }
+
+.clicked-dropdown .dropdown-content,
+.dropdown-ul:hover .dropdown-content,
+.dropdown-ul li:focus + .dropdown-content,
+.dropdown-content li:focus,
+.dropdown-content li:focus ~ li {
+  visibility: visible;
+  border: 1px solid black; }
+
+/****
+ Mobile Styles
+****/
+@media only screen and (max-width: 599px) {
+  .header-li,
+  .dropdown-ul,
+  .header-main-ul {
+    clear: both;
+    min-width: 140px; }
+
+  .dropdown-content {
+    margin-left: 140px;
+    top: 0px; } }
 .footer {
   position: relative;
   top: 30px; }

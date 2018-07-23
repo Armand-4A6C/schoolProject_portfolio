@@ -1,0 +1,43 @@
+.dropdown-ul {
+   position: relative;
+}
+
+//hides dropdown-content
+.dropdown-content {
+   position: absolute;
+   visibility: hidden;
+   margin-top: -1px;
+}
+
+.dropdown-content li a {
+   display: block;
+}
+
+//shows the dropdown menu when hovering or focusing
+.clicked-dropdown .dropdown-content,
+
+.dropdown-ul:hover .dropdown-content,
+.dropdown-ul li:focus + .dropdown-content,
+.dropdown-content li:focus,
+.dropdown-content li:focus ~ li {
+   visibility: visible;
+   border: 1px solid black;
+}
+
+
+/****
+ Mobile Styles
+****/
+@media only screen and (max-width: 599px) {
+    .header-li,
+    .dropdown-ul,
+    .header-main-ul {
+        clear:both;
+        min-width: 140px
+    }
+
+    .dropdown-content {
+        margin-left: 140px;
+        top: 0px
+    }
+}
