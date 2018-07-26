@@ -24,7 +24,8 @@
 .display-m-block,
 .display-l-block,
 .display-xl-block {
-  display: none; }
+  display: none;
+  min-height: 1px; }
 
 /* For smallest devices: */
 .display-xs-block {

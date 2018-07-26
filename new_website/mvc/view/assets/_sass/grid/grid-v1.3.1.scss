@@ -30,6 +30,7 @@
 .display-l-block,
 .display-xl-block {
     display: none;
+    min-height: 1px;
 }
 
 /* For smallest devices: */
