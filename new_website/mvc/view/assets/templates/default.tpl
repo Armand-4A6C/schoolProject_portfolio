@@ -10,7 +10,9 @@
     {header}
     <!-- <?php include "view/assets/templates/header.tpl" ?> -->
 
-    {main}
+    <main class="row">
+        {main}
+    </main>
 
     {footer}
     <!-- <?php include "view/assets/templates/footer.tpl" ?> -->
